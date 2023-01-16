@@ -1,0 +1,27 @@
+.box
+{
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    background-color: bisque;
+}
+
+:root
+{
+    
+    counter-reset: entryCounter;
+    --count: counter(entryCounter);
+    /* counter-reset: entryCounter; */
+}
+
+
+
+*:not(dd)
+{
+    margin: 0;
+     
+
+}
+
+
+
