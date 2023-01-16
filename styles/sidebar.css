@@ -1,0 +1,62 @@
+
+.card
+{
+    counter-increment: entryCounter 1;
+    grid-column-start: 2;
+    background-color: rgb(236, 236, 236);
+    grid-column: 3;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: stretch;
+}
+
+
+
+
+aside
+{
+    color: red;
+    background-color: red;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(188, 255, 176);
+
+    border-radius: 0 0 20px 20px;
+}
+
+.asd
+{
+
+}
+
+aside dd
+{
+    font-size: small;
+    margin-left: 5px;
+}
+
+
+
+.card::before
+{
+    content: "tajahao" counter(entryCounter);
+
+}
+
+/* #title::after
+{
+    content: var(--count);
+} */
+
+
+.main-content
+{
+    margin-top: 20px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 0.45fr 0.05fr 1.3fr 0.1fr;
+    grid-template-rows: repeat( counter(entryCounter) ,1fr);
+    margin-bottom: 20px;
+}
+
+
