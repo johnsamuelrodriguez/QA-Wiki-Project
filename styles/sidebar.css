@@ -1,16 +1,4 @@
 
-.card
-{
-    counter-increment: entryCounter 1;
-    grid-column-start: 2;
-    background-color: rgb(236, 236, 236);
-    grid-column: 3;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    align-self: stretch;
-}
-
 
 
 
@@ -22,7 +10,8 @@ aside
     background-color: rgb(188, 255, 176);
 
     border-radius: 0 0 20px 20px;
-}
+    grid-row: 1 / 7;
+}   
 
 .asd
 {
@@ -37,11 +26,7 @@ aside dd
 
 
 
-.card::before
-{
-    content: "tajahao" counter(entryCounter);
 
-}
 
 /* #title::after
 {
@@ -57,6 +42,7 @@ aside dd
     grid-template-columns: 0.45fr 0.05fr 1.3fr 0.1fr;
     grid-template-rows: repeat( counter(entryCounter) ,1fr);
     margin-bottom: 20px;
+
 }
 
 

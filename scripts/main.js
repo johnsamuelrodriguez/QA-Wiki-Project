@@ -44,13 +44,32 @@ $( function(){
         // alert(item);
         let card = document.createElement('div');
         card.classList.add('card');
-        card.innerText = "\nhalo world";
+        card.innerText = `\nhalo world
         
+        asdsadsa
+        sadas
+        d
+        sadsadsadsa
+        asdasdasdasd
+        asdsadsadad
+        asdsadsa
+        
+        
+        `;
+        console.log( links.print() );
+        // console.log`${ check(e.link)}`;
+        
+       
         
         main.appendChild(card);
     });
 
     cards = document.querySelectorAll(".card");
-    $(".main-content").css('grid-template-rows',`repeat(${cards.length},1fr)` );
+    // $('aside').css('grid-row',`1 /  span(2)`);
+
+    let rows = cards.length * 3;
+    $(".main-content").css('grid-template-rows',`repeat( ${rows},1fr)` );
+    $(".main-content").css('grid-rows',`1 / span(3)` );
+
 
 });
