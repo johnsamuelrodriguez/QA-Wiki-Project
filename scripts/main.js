@@ -79,6 +79,10 @@ $( function()
 {
     let logo = document.querySelector('#QA-logo');
     logo.addEventListener('click', e => {
-        window.location.replace('../index.html');
+        if( !window.location.href.includes('index.html'))
+        {
+            window.location.replace('../index.html');
+        }
+
     });
 });
