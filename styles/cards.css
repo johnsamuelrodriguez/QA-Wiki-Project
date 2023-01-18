@@ -1,0 +1,18 @@
+.card
+{
+    counter-increment: entryCounter 1;
+    grid-column-start: 2;
+    background-color: rgb(236, 236, 236);
+    grid-column: 3;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-self: stretch;
+    grid-row-end: span(3);
+}
+
+.card::before
+{
+    content: "tajahao" counter(entryCounter);
+}
+

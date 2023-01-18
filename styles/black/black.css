@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75),
+        url('data/images/QA.svg')
+    );
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar
+{
+    width: 85%;
+    margin: 0;
+    padding: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo
+{
+    max-width: 200px;
+    cursor: pointer;
+
+}
+
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    font-size: 15px;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    /* color: #fff; */
+       color: rgb(185, 185, 185);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #16c4b2;
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: 0.65s;
+
+}
+
+.navbar ul li:hover::after
+{
+    width: 100%;
+}
+
+a:hover
+{
+    color: azure;
+}
+
+.content-black
+{
+    width: 100%;
+
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+ 
+    color: rgb(255, 255, 255);
+
+}
+
+.content-black h1
+{
+    font-size: 50px;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+.content-black p
+{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.buttons-home
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border: 2px solid blue;
+    background-color: white;
+    border-radius: 20px;
+    color: white;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons-home:hover
+{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border: 2px solid blue;
+    background-color: rgb(144, 144, 144);
+    border-radius: 20px;
+    color: white;
+    background: transparent;
+    position: relative;
+}
