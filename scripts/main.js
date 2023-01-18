@@ -73,3 +73,12 @@ $( function(){
 
 
 });
+
+
+$( function() 
+{
+    let logo = document.querySelector('#QA-logo');
+    logo.addEventListener('click', e => {
+        window.location.replace('../index.html');
+    });
+});
