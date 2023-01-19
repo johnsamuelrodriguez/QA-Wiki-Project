@@ -176,6 +176,11 @@ button:hover .spans-button
     color:rgb(168, 166, 166);
 }
 
+.content-black--p-highlight
+{
+    color:rgb(206, 206, 206);
+}
+
 
 .guidelines--section-block
 {
@@ -196,4 +201,5 @@ a:not(.good)
 {
     cursor: not-allowed
 }
+
 

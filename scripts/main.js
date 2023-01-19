@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 
 
@@ -22,7 +22,7 @@ class Items
 $( function(){
 
     // console.log("ready");
-    
+
     // let hello = document.querySelector('.hello');
     // hello.innerHTML += " JS";
 
@@ -30,6 +30,7 @@ $( function(){
     let cards = document.querySelectorAll(".card");
     let main = document.querySelector(".main-content");
     let title = document.querySelector("#title");
+
 
     title.textContent += cards.length;
 
@@ -45,7 +46,7 @@ $( function(){
         let card = document.createElement('div');
         card.classList.add('card');
         card.innerText = `\nhalo world
-        
+
         asdsadsa
         sadas
         d
@@ -53,14 +54,14 @@ $( function(){
         asdasdasdasd
         asdsadsadad
         asdsadsa
-        
-        
+
+
         `;
         console.log( links.print() );
         // console.log`${ check(e.link)}`;
-        
-       
-        
+
+
+
         main.appendChild(card);
     });
 
@@ -75,7 +76,7 @@ $( function(){
 });
 
 
-$( function() 
+$( function()
 {
     let logo = document.querySelector('#QA-logo');
     logo.addEventListener('click', e => {
@@ -83,6 +84,11 @@ $( function()
         {
             window.location.replace('../index.html');
         }
-
     });
+
+
+    if( window.location.href.includes('index.html') )
+    {
+        $('html').css('overflow','hidden scroll');
+    }
 });
