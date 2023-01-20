@@ -5,14 +5,14 @@
     --logo-size: 200px;
 }
 
-*
+/* *
 {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background-color: black;
     z-index: 0;
-}
+} */
 
 .banner{
     width: 100%;
@@ -202,7 +202,26 @@ a:not(.good)
     cursor: not-allowed
 }
 
+@media screen and ( max-width: 500px)
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: black;
+        z-index: 0;
+    }
 
+
+}
+
+#QA-png
+{
+    width: 100%;
+    height: 50%;
+    object-fit: scale-down;
+}
 
 
 
