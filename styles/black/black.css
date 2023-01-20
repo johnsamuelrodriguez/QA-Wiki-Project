@@ -10,18 +10,16 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: black;
+
+
     z-index: 0;
 }
+
 
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(
-        rgba(0,0,0,0.75),
-        rgba(0,0,0,0.75),
-        url('data/images/QA.svg')
-    );
+
     background-size: cover;
     background-position: center;
 
@@ -181,12 +179,28 @@ button:hover .spans-button
     color:rgb(206, 206, 206);
 }
 
+body
+{
+    background-image: radial-gradient(rgb(118, 119, 90),rgb(34, 1, 72));
+    object-fit: cover   ;
+}
+
 
 .guidelines--section-block
 {
     margin: 50px 20%;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75),
+        url('data/images/QA.svg')
+    );
+
+    background: rgb(34, 7, 44);
+    border: 2px inset rgb(9, 62, 27);
+    border-top: 0px;
+    border-radius: 10px;
 }
 
 
