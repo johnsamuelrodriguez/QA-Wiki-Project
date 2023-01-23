@@ -227,6 +227,8 @@ button.button--guidelines
     width:20%; align-self: center;
                     padding: 10px;
                     border-radius: 30px;
+                    margin: 20px;
+    min-width: 30%;
 }
 
 button.button--guidelines:hover
@@ -239,7 +241,10 @@ button.button--guidelines:hover
 }
 
 
-
+.footer
+{
+    padding-top: 100px;
+}
 
 
 
