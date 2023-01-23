@@ -141,15 +141,21 @@ $( function()
             buttonHide.style.display = 'none';
 
             button.addEventListener( 'click', e => {
-                button.style.display = 'none';
-             buttonHide.style.display = 'block';
-             contentMain.style.display = 'block';
+            // button.style.display = 'none';
+            //  buttonHide.style.display = 'block';
+            //  contentMain.style.display = 'block';
+            $(button).slideToggle();
+            $(buttonHide).slideToggle();
+            $(contentMain).slideToggle();
             });
 
             buttonHide.addEventListener('click', e => {
-                button.style.display = 'block';
-                buttonHide.style.display = 'none';
-                contentMain.style.display = 'none';
+                // button.style.display = 'block';
+                // buttonHide.style.display = 'none';
+                // contentMain.style.display = 'none';
+                $(button).slideToggle();
+                $(buttonHide).slideToggle();
+                $(contentMain).slideToggle();
             });
 
     
