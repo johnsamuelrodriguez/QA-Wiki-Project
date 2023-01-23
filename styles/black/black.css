@@ -174,9 +174,15 @@ button:hover .spans-button
     color:rgb(168, 166, 166);
 }
 
+
+
 .content-black--p-highlight
 {
     color:rgb(206, 206, 206);
+    background-color: rgb(0, 32, 16);
+    padding:20px;
+    border-radius: 25px;
+    filter: drop-shadow( 10px 0 20px rgb(0, 92, 71)) invert( 85%);
 }
 
 body
@@ -214,6 +220,22 @@ body
 a:not(.good)
 {
     cursor: not-allowed
+}
+
+button.button--guidelines
+{
+    width:20%; align-self: center;
+                    padding: 10px;
+                    border-radius: 30px;
+}
+
+button.button--guidelines:hover
+{
+    width:20%; align-self: center;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(205, 165, 206);
+
 }
 
 
