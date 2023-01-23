@@ -5,21 +5,23 @@
     --logo-size: 200px;
 }
 
-*
+/* *
 {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
-
+    background-color: black;
     z-index: 0;
-}
-
+} */
 
 .banner{
     width: 100%;
     height: 100vh;
-
+    background-image: linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75),
+        url('data/images/QA.svg')
+    );
     background-size: cover;
     background-position: center;
 
@@ -174,21 +176,9 @@ button:hover .spans-button
     color:rgb(168, 166, 166);
 }
 
-
-
 .content-black--p-highlight
 {
     color:rgb(206, 206, 206);
-    background-color: rgb(0, 32, 16);
-    padding:20px;
-    border-radius: 25px;
-    filter: drop-shadow( 10px 0 20px rgb(0, 92, 71)) invert( 85%);
-}
-
-body
-{
-    background-image: radial-gradient(rgb(118, 119, 90),rgb(34, 1, 72));
-    object-fit: cover   ;
 }
 
 
@@ -197,16 +187,6 @@ body
     margin: 50px 20%;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(
-        rgba(0,0,0,0.75),
-        rgba(0,0,0,0.75),
-        url('data/images/QA.svg')
-    );
-
-    background: rgb(34, 7, 44);
-    border: 2px inset rgb(9, 62, 27);
-    border-top: 0px;
-    border-radius: 10px;
 }
 
 
@@ -222,29 +202,27 @@ a:not(.good)
     cursor: not-allowed
 }
 
-button.button--guidelines
+@media screen and ( max-width: 500px)
 {
-    width:20%; align-self: center;
-                    padding: 10px;
-                    border-radius: 30px;
-                    margin: 20px;
-    min-width: 30%;
-}
+    *
+    {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: black;
+        z-index: 0;
+    }
 
-button.button--guidelines:hover
-{
-    width:20%; align-self: center;
-    padding: 10px;
-    border-radius: 30px;
-    background-color: rgb(205, 165, 206);
 
 }
 
-
-.footer
+#QA-png
 {
-    padding-top: 100px;
+    width: 100%;
+    height: 50%;
+    object-fit: scale-down;
 }
+
 
 
 
