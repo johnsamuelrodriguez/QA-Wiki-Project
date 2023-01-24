@@ -25,14 +25,16 @@ $( function(){
 
     // let hello = document.querySelector('.hello');
     // hello.innerHTML += " JS";
-
+    return;
 
     let cards = document.querySelectorAll(".card");
     let main = document.querySelector(".main-content");
     let title = document.querySelector("#title");
 
-
-    title.textContent += cards.length;
+    if ( title ){
+        title.textContent += cards.length;
+    }
+ 
 
     console.log(main);
     console.log(cards);

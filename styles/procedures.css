@@ -1,0 +1,125 @@
+.headings
+{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    flex-direction: column;
+
+}
+
+.main-headings
+{
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+}
+
+.sub-headings
+{
+    flex: 0 0 auto;
+    padding-left: 20px;
+    color:rgb(208, 252, 234);
+    margin: 4px 0px;
+
+    border: 1px solid orange;
+    cursor: pointer;
+
+}
+
+.sidebar-contents
+{
+    padding: 30px 15px 30px 10px;
+     display:flex; 
+    flex-direction: column; 
+    color: gray;
+    max-height: 70vh;
+}
+
+
+.sidebar
+{
+    display: flex; 
+    flex: 0 0 auto;
+    border-right: rgb(255, 255, 255); border-width: 2px;
+            flex-wrap: nowrap; overflow-x: auto;
+            border-width: 0 2px 0 0 ;
+            /* border: 1px solid black;     */
+            border-style: solid;
+            max-width: 250px;
+}
+
+
+.info{
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+   align-items: center ;
+   justify-items: center;
+   display: flex;
+   /* overflow-y: auto; */
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+
+.info-content
+{
+    padding: 20px;
+    color: rgb(255, 228, 217);
+    display: none;
+    align-self: center;
+    justify-self: center;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    text-align: left;
+    flex: 0 0 auto;
+}
+
+.a-headings
+{
+    color: wheat;
+    text-decoration: none;
+}
+
+.a-headings:visited
+{
+    color: wheat;
+    text-decoration: none;
+}
+
+.show
+{
+    display: block; 
+}
+
+.INFO
+{
+    display: flex;  
+    overflow-y: auto; 
+    flex-wrap: nowrap; 
+        margin-left: 30px; 
+        flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+    max-height: 70vh;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    
+}
+
+.main-row
+{
+    display: flex;
+    flex-wrap: nowrap; 
+    background-color: rgb(60, 60, 255);
+    margin: 0 30px;
+    justify-self: center;
+    align-items: center;
+    flex: 1 0 auto;
+    max-height: calc(75vh );
+    border-radius: 30px;
+}
