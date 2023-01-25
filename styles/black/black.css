@@ -185,6 +185,15 @@ button:hover .spans-button
     filter: drop-shadow( 10px 0 20px rgb(0, 92, 71)) invert( 85%);
 }
 
+.content-black--p-highlight:hover
+{
+    color:rgb(206, 206, 206);
+    background-color: rgb(0, 32, 16);
+    padding:20px;
+    border-radius: 25px;
+    filter: drop-shadow( 10px 0 20px rgb(7, 7, 7)) invert( 90%);
+}
+
 body
 {
     background-image: radial-gradient(rgb(118, 119, 90),rgb(34, 1, 72));
