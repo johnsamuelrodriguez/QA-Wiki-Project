@@ -94,3 +94,28 @@ $( function() {
     });
 
 });
+
+
+$( function() {
+
+    let icon = document.getElementsByClassName('icon-book')[0];
+    let sidebar = document.querySelector('.sidebar-contents');
+    let info = document.getElementsByClassName('INFO')[0];
+
+    icon.addEventListener('click', e => {
+        $(sidebar).toggle('swing');
+        $(info).css('flex', '15 0 0');
+        $(sidebar).css('margin: 20px');
+
+        sidebar.classList.toggle('open');
+
+        if( sidebar.classList.contains('open'))
+        {
+           $(icon).css('background-image', "url('../data//images/icons/book0000.png'");
+        }
+        else
+        {
+            $(icon).css('background-image', "url('../data//images/icons/book0001.png'");
+        }
+    });
+});
