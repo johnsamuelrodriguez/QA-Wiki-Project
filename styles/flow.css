@@ -1,0 +1,62 @@
+.flow-diagram
+{
+    display: flex;
+    /* background-color: wheat; */
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+}
+
+.flow-diagram::after
+{
+    content: '';
+    background-color: wheat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+
+.flow-diagram-image
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 20%;
+    column-gap: 30px;;
+}
+
+.flow-diagram-image img
+{
+    width: 80vw;
+    object-fit: scale-down;
+    flex: 0;
+
+
+}
+
+.svg-image
+{
+    /* fill: currentColor;
+    stroke: currentColor; */
+    color: currentColor;
+    filter: invert(0.7) rgb(124, 255, 58) saturate(4) hue-rotate(172deg);
+}
+
+.img--flow
+{
+    margin: 15px;
+    background-color: rgb(158 150 181);
+    border-radius: 22px;
+    padding: 5px;
+    
+
+
+
+
+}
