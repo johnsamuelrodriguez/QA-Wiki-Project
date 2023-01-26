@@ -40,7 +40,6 @@ $( function() {
                     sub.classList.add('sub-headings');
                     sub.innerText = sh;
 
-               
 
                     // let subheading = document.createElement('a');
                     // subheading.classList.add('a-headings');
@@ -66,8 +65,13 @@ $( function() {
                         [...document.querySelectorAll('.show')].forEach( e => {
                             e.classList.remove('show');
                         });
+
+                        [...document.querySelectorAll('.lit')].forEach( e=> {
+                            e.classList.remove('lit');
+                        });
      
                         inf.classList.toggle('show');
+                        sub.classList.add('lit');
                     });
 
                     item.append(sub);

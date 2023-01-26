@@ -58,7 +58,7 @@
 }
 
 
-.sub-headings:active
+.sub-headings:active, .sub-headings:focus
 {
     flex: 0 0 auto;
     padding-left: 20px;
@@ -266,7 +266,7 @@
     {
 
         /* color: rgb(255, 228, 217); */
-        color: rgb(45, 232, 21);
+        /* color: rgb(45, 232, 21); */
         display: none;
 
         align-items: initial    ;
@@ -287,6 +287,11 @@
     {
         overflow-y: scroll;
       
+    }
+
+    .main-row
+    {
+        margin: 0 10px 0 10px;
     }
 
 
@@ -326,3 +331,7 @@
     flex: 0;
 }
 
+.lit
+{
+    color: rgb(211, 255, 66);
+}
