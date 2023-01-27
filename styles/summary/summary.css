@@ -1,0 +1,62 @@
+.summary-released
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.summary
+{
+    display: flex;
+
+
+
+    justify-content: center;
+    margin: 0 10%;  
+}
+
+
+table
+{
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 3px solid rgb(0, 0, 0);
+
+    table-layout: fixed;
+    margin: 20% 0;
+    max-width: fit-content;
+
+}
+
+.table--summary
+{
+    margin: 0px;
+}
+
+tr:first-of-type > th
+{
+    background-color: rgb(232, 225, 225);
+    /* border: 3px solid green; */
+}
+
+th, td
+{
+    background-color: rgb(248, 244, 244);
+    border: 1px solid rgb(84, 13, 13);
+    width: fit-content;
+    padding: clamp(5px, 10px, 20px);
+}
+
+caption
+{
+    background-color: rgb(248, 244, 244);
+    border-style: inset;
+    padding: 20px;
+    font-weight: bold;
+    font-size: clamp(2rem, 0.5vw + 0.5rem, 4rem);
+    
+}
