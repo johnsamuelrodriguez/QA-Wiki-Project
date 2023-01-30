@@ -174,7 +174,17 @@ button:hover .spans-button
     color:rgb(168, 166, 166);
 }
 
+.content-black--p
+{
+    /* color:rgb(168, 166, 166); */
+    color:rgb(235, 225, 171);
 
+    background-image: linear-gradient(25deg, rgb(183, 0, 255), rgb(3, 148, 58));
+    padding: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-style: groove;
+}
 
 .content-black--p-highlight
 {
