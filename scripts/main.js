@@ -175,5 +175,35 @@ $( function()
     }
 });
 
+$( function(){
+
+
+    if ( window.location.href.includes('quotes.html') || window.location.href.includes('guidelines.html') )
+    {
+        
+        let scroll = document.querySelector('#picture-backtop');
+        scroll.addEventListener('click', ()=>{
+            $('html').animate( {
+                scrollTop: $('.navbar').offset().top }, 
+                ( document.documentElement.scrollHeight - document.documentElement.clientHeight )/2 );
+        });
+
+
+        window.addEventListener('scroll', ()=>{
+            if ( window.pageYOffset > 100 )
+            {
+                scroll.classList.add('active');
+            }
+            else
+            {
+                scroll.classList.remove('active');
+            }
+        });
+
+
+
+    }
+});
+
 
 
