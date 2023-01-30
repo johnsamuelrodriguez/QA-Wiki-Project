@@ -34,7 +34,7 @@ $( function(){
     if ( title ){
         title.textContent += cards.length;
     }
- 
+
 
     console.log(main);
     console.log(cards);
@@ -93,15 +93,15 @@ $( function()
     {
         $('html').css('overflow','hidden scroll');
     }
-    
+
     if (window.location.href.includes('guidelines.html') )
     {
         [...items].forEach( e => {
-            
+
 
             let main = document.querySelector('.content-black');
             let block = document.createElement('div');
-    
+
             let section = document.createElement('div');
             let contentHiglight = document.createElement('p');
             let contentMain = document.createElement('p');
@@ -110,25 +110,25 @@ $( function()
             let hr1 = document.createElement('hr');
             let hr2 = document.createElement('hr');
             let h3 = document.createElement('h3');
-            
+
             contentHiglight.classList.add('content-black--p-highlight');
             contentMain.classList.add('content-black--p');
 
             contentHiglight.innerText = e.mainContent ;
             contentMain.innerText =  e.subContent
-            
+
             let br = document.createElement('br');
             let br1 = document.createElement('br');
-    
-    
+
+
             let title = e.heading;
             h3.innerText = title;
             button.textContent = 'SHOW MORE';
             buttonHide.textContent = 'HIDE';
             button.classList.add('button--guidelines');
             buttonHide.classList.add('button--guidelines');
-            
-    
+
+
             section.classList.add('guidelines--section-block');
             section.prepend(hr1);
             section.append(br1);
@@ -160,14 +160,14 @@ $( function()
                 $(contentMain).slideToggle();
             });
 
-    
-    
+
+
             section.append(contentHiglight);
             section.append(button);
-    
+
             section.append(contentMain);
-            section.appendChild(buttonHide);    
-    
+            section.appendChild(buttonHide);
+
             main.appendChild(section);
 
         });
