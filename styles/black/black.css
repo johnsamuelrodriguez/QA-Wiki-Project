@@ -15,6 +15,12 @@
     z-index: 0;
 }
 
+*, html
+{
+    scroll-behavior: smooth;
+}
+
+
 
 .banner{
     width: 100%;
@@ -174,7 +180,54 @@ button:hover .spans-button
     color:rgb(168, 166, 166);
 }
 
+h3
+{
+    font-family: "Raleway", sans-serif;
+    /* letter-spacing: 1px; */
+}
 
+#back-to-top
+{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+#picture-backtop
+{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: rgb(207, 255, 227);
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.7;
+    pointer-events: none;
+    display: none;
+}
+
+#picture-backtop.active
+{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0.9;
+    pointer-events: auto;
+    transform: all 0.4s;
+    display: block;
+}
+
+
+#picture-backtop.active:hover, 
+#picture-backtop.active:active
+{
+    opacity: 1;
+}
 
 .content-black--p--index
 {
