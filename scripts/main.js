@@ -82,7 +82,7 @@ $( function()
 {
     let logo = document.querySelector('#QA-logo');
     logo.addEventListener('click', e => {
-        alert( window.location.href );
+
         if( !window.location.href.includes('index.html'))
         {
             if ( window.location.href.split('/').length > 5 )
