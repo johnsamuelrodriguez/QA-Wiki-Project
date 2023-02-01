@@ -272,6 +272,12 @@ body
 }
 
 
+
+#QA-logo
+{
+    min-width: 275px;
+}
+
 .guidelines--section-block
 {
     margin: 50px 20%;
