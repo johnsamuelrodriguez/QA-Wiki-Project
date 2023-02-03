@@ -185,12 +185,30 @@ $( function(){
     if ( window.location.href.includes('quotes.html') || window.location.href.includes('guidelines.html') )
     {
         
+
+        let blocks = document.querySelectorAll('.quotes--section-block');
+        let banner = document.querySelector('.banner');
+        let header = document.querySelector('.content-black.align > h1');
+
+
         let scroll = document.querySelector('#picture-backtop');
         scroll.addEventListener('click', ()=>{
+
+
+            banner.style.cssText = 'scroll-snap-align: none';
+     
+            blocks.forEach( block => {
+                block.style.cssText = 'scroll-snap-align: none';
+            });
+
+            header.style.cssText = 'scroll-snap-align: none';
+
             $('html').animate( {
                 scrollTop: $('.navbar').offset().top }, 
                 ( document.documentElement.scrollHeight - document.documentElement.clientHeight )/2 );
         });
+
+
 
 
         window.addEventListener('scroll', ()=>{
@@ -201,6 +219,12 @@ $( function(){
             else
             {
                 scroll.classList.remove('active');
+                     blocks.forEach( block => {
+                block.style.cssText = 'scroll-snap-align: start';
+                });
+
+                banner.style.cssText = 'scroll-snap-align: start';
+                header.style.cssText = 'scroll-snap-align: start';
             }
         });
 

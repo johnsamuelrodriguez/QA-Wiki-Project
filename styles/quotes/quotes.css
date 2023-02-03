@@ -1,0 +1,14 @@
+.banner
+{
+    scroll-snap-align: start;
+}
+
+.content-black.align > h1
+{
+    scroll-snap-align: start;
+}
+
+.content-black div:nth-of-type(1)
+{
+    scroll-snap-align: start;
+}
