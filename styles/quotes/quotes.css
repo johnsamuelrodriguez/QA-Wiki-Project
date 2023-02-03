@@ -1,14 +1,14 @@
 .banner
 {
-    scroll-snap-align: start;
+    scroll-snap-align: none;
 }
 
 .content-black.align > h1
 {
-    scroll-snap-align: start;
+    scroll-snap-align: none;
 }
 
 .content-black div:nth-of-type(1)
 {
-    scroll-snap-align: start;
+    scroll-snap-align: none;
 }
