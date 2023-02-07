@@ -30,6 +30,12 @@ var summaries_defects =  [{
         'Status': 'Post Live QA - Passed'
     },
 
+    "330208":
+    {
+        'Description': '[Dev]: scroll behavior redesign',
+        'Status': 'Post Live QA - Passed'
+    },
+
 
 
     // "00000":
