@@ -24,6 +24,14 @@ var summaries_defects =  [{
         'Status': 'Post Live QA - Passed'
     },
 
+    "330207":
+    {
+        'Description': '[Dev]: Fixed autoscroll behavior',
+        'Status': 'Post Live QA - Passed'
+    },
+
+
+
     // "00000":
     // {
     //     'Description': '',
