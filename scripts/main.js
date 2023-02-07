@@ -212,8 +212,7 @@ $( function(){
             }
 
             $('html').animate( {
-                scrollTop: $('.navbar').offset().top }, 
-                ( document.documentElement.scrollHeight - document.documentElement.clientHeight )/2 );
+                scrollTop: $('.navbar').offset().top }, 2000);
         });
 
 
@@ -222,21 +221,27 @@ $( function(){
         window.addEventListener('scroll', ()=>{
             if ( window.pageYOffset > 100 )
             {
+
                 scroll.classList.add('active');
 
             }
             else
             {
+
                 scroll.classList.remove('active');
 
                 if( window.location.href.includes('quotes.html') )
                 {
-                    blocks.forEach( block => {
-                    block.style.cssText = 'scroll-snap-align: start';
-                    });
+                    setTimeout( ()=> {
 
-                    banner.style.cssText = 'scroll-snap-align: start';
-                    header.style.cssText = 'scroll-snap-align: start';
+                        blocks.forEach( block => {
+                            block.style.cssText = 'scroll-snap-align: start';
+                            });
+        
+                            banner.style.cssText = 'scroll-snap-align: start';
+                            header.style.cssText = 'scroll-snap-align: start';
+                    }, 5000)
+                
                 }
             }
         });
@@ -245,12 +250,16 @@ $( function(){
      
             if( window.location.href.includes('quotes.html') && !scroll.classList.contains('active')  )
             {
-                blocks.forEach( block => {
-                block.style.cssText = 'scroll-snap-align: start';
-                });
 
-                banner.style.cssText = 'scroll-snap-align: start';
-                header.style.cssText = 'scroll-snap-align: start';
+                setTimeout( () => {
+
+                    blocks.forEach( block => {
+                    block.style.cssText = 'scroll-snap-align: start';
+                    });
+    
+                    banner.style.cssText = 'scroll-snap-align: start';
+                    header.style.cssText = 'scroll-snap-align: start';
+                }, 5000)
             }
 
 
