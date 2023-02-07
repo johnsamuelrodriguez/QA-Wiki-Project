@@ -78,6 +78,8 @@ $( function(){
 });
 
 
+
+
 $( function()
 {
     let logo = document.querySelector('#QA-logo');
@@ -179,12 +181,17 @@ $( function()
     }
 });
 
+
+
 $( function(){
 
 
     if ( window.location.href.includes('quotes.html') || window.location.href.includes('guidelines.html') )
     {
         
+
+        let scrolling = false;
+        let scrolled = false;
 
         let blocks, header;
 
@@ -201,6 +208,9 @@ $( function(){
         scroll.addEventListener('click', ()=>{
 
 
+            scroll.classList.remove('active');
+
+
             banner.style.cssText = 'scroll-snap-align: none';
      
             if( window.location.href.includes('quotes.html') )
@@ -211,38 +221,46 @@ $( function(){
                 header.style.cssText = 'scroll-snap-align: none';
             }
 
-            $('html').animate( {
-                scrollTop: $('.navbar').offset().top }, 2000);
+            if ( !scrolled )
+            {
+                scrolled = true;
+                scrolling = true;
+
+                $('html').animate( {
+                    scrollTop: $('.navbar').offset().top }, 2000);
+            }
+
+
         });
 
 
         
 
         window.addEventListener('scroll', ()=>{
-            if ( window.pageYOffset > 100 )
+            if ( window.pageYOffset > 300 )
             {
 
                 scroll.classList.add('active');
+
+                if( !scrolling )
+                {
+
+                    blocks.forEach( block => {
+                        block.style.cssText = 'scroll-snap-align: start';
+                        });
+
+                        banner.style.cssText = 'scroll-snap-align: start';
+                        header.style.cssText = 'scroll-snap-align: start';
+                }
+
 
             }
             else
             {
 
                 scroll.classList.remove('active');
-
-                if( window.location.href.includes('quotes.html') )
-                {
-                    setTimeout( ()=> {
-
-                        blocks.forEach( block => {
-                            block.style.cssText = 'scroll-snap-align: start';
-                            });
-        
-                            banner.style.cssText = 'scroll-snap-align: start';
-                            header.style.cssText = 'scroll-snap-align: start';
-                    }, 5000)
-                
-                }
+                scrolled = false;
+                scrolling = false;
             }
         });
 
@@ -251,18 +269,13 @@ $( function(){
             if( window.location.href.includes('quotes.html') && !scroll.classList.contains('active')  )
             {
 
-                setTimeout( () => {
-
-                    blocks.forEach( block => {
-                    block.style.cssText = 'scroll-snap-align: start';
+                blocks.forEach( block => {
+                    block.style.cssText = 'scroll-snap-align: none';
                     });
-    
-                    banner.style.cssText = 'scroll-snap-align: start';
-                    header.style.cssText = 'scroll-snap-align: start';
-                }, 5000)
+
+                    banner.style.cssText = 'scroll-snap-align: none';
+                    header.style.cssText = 'scroll-snap-align: none';
             }
-
-
 
     }
 });
