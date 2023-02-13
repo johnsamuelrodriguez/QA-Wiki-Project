@@ -335,3 +335,9 @@
 {
     color: rgb(211, 255, 66);
 }
+
+.summary-released:nth-child(1)
+{
+    padding-top: 30px;
+    background: blue;
+}
