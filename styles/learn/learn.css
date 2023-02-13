@@ -1,0 +1,60 @@
+.banner.learn
+{
+    height: 25vh;
+}
+
+*
+{
+    outline: 2px solid green;
+
+}
+
+body
+{
+    outline: 1px solid peru;
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
+    grid-row-gap: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+main.learn
+{
+
+}
+
+.col-12
+{
+    display: flex !important;
+grid-template-columns: repeat(12, min-content);
+   flex-direction: column;             
+   width: 300px;
+   align-items: center;
+   justify-content: center;
+
+   height: 100%;
+
+
+}
+
+.test 
+{
+
+    flex: 0;
+}
+
+.row
+{
+   display: grid;
+   grid-auto-flow: column;
+   grid-auto-columns: max(22%,300px);
+   overflow-x: auto !important;
+   grid-column-gap: 20px;
+   position: relative;
+   overscroll-behavior-inline: contain;
+   height: 300px;
+  
+}

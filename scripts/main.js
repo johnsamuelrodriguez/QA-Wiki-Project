@@ -3,6 +3,12 @@
  */
 
 
+function Learn()
+{
+    window.location.href = 'pages/learn.html'
+}
+
+
 class Items
 {
     constructor(heading, mainContent, subContent, link, images )
@@ -113,8 +119,8 @@ $( function()
             let contentMain = document.createElement('p');
             let button = document.createElement('button');
             let buttonHide = document.createElement('button');
-            let hr1 = document.createElement('hr');
-            let hr2 = document.createElement('hr');
+            // let hr1 = document.createElement('hr');
+            // let hr2 = document.createElement('hr');
             let h3 = document.createElement('h3');
 
             contentHiglight.classList.add('content-black--p-highlight');
@@ -136,12 +142,12 @@ $( function()
 
 
             section.classList.add('guidelines--section-block');
-            section.prepend(hr1);
+            // section.prepend(hr1);
             section.append(br1);
             section.append(h3);
             section.append(br);
-            section.prepend(hr2);
-            section.append( hr2);
+            // section.prepend(hr2);
+            // section.append( hr2);
 
             buttonHide.style.display = 'none';
             contentMain.style.display = 'none';
@@ -234,7 +240,6 @@ $( function(){
         });
 
 
-        
 
         window.addEventListener('scroll', ()=>{
             if ( window.pageYOffset > 300 )

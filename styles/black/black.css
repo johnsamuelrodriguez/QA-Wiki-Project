@@ -42,6 +42,13 @@
     justify-content: space-between;
 }
 
+.navbar::after
+{
+    width: 100vh;
+    background-color: white;
+    z-index: 3;
+}
+
 .logo
 {
     max-width: var(--logo-size);
@@ -67,8 +74,7 @@
 .navbar a
 {
     text-decoration: none;
-    color: #fff;
-       color: rgb(185, 185, 185);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
 
@@ -94,6 +100,7 @@
 a:hover
 {
     color: azure;
+    color: #424242;
 }
 
 .content-black
@@ -105,7 +112,11 @@ a:hover
     align-self: center;
     justify-self: center;
 
-    color: rgb(255, 255, 255);
+    color: #424242;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 
@@ -125,6 +136,8 @@ html
     font-size: 50px;
     margin-top: 80px;
     text-transform: uppercase;
+    color: #fff;
+    text-shadow: 1px 1px 2px #424242;
 }
 
 .content-black p
@@ -150,7 +163,7 @@ html
     overflow: hidden;
 }
 
-.buttons-home:hover
+.buttons-home.learn
 {
     width: 200px;
     padding: var( --button-home--padding );
@@ -172,12 +185,13 @@ span.spans-button
     height: 100%;
     width: 0%;
     position: absolute;
-    border-radius: var(--button-home--border-radius);
+    /* border-radius: var(--button-home--border-radius); */
     left: 0;
     bottom: 0;
     text-transform: uppercase;
     transition: 0.45s;
     z-index: -1;
+ 
 
 }
 
@@ -244,6 +258,7 @@ h3
 .content-black--p--index
 {
      color:rgb(223, 223, 223);
+     color: #fff; text-shadow: 1px 1px 2px #424242;
 
 }
 
@@ -252,34 +267,44 @@ h3
     /* color:rgb(168, 166, 166); */
     color:rgb(235, 225, 171);
 
-    background-image: linear-gradient(25deg, rgb(183, 0, 255), rgb(3, 148, 58));
+    /* background-image: linear-gradient(25deg, rgb(183, 0, 255), rgb(3, 148, 58)); */
+    /* background-image: linear-gradient(30deg, rgb(234, 255, 0),  #00beff, #5ac152); */
+    background-image: linear-gradient(30deg, #ffff1d,  #ffff1d, #ffff1d);
+    /* background-image: linear-gradient(0deg, #5ac152, #5ac152,  #5ac152); */
     padding: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-style: groove;
+    border-color: #ffff1d;
+    color: #424242;
+    /* text-shadow: 1px 1px 2px #121212; */
+    
 }
 
 .content-black--p-highlight
 {
-    color:rgb(206, 206, 206);
-    background-color: rgb(0, 32, 16);
+    color:rgb(255, 255, 255);
+    background-color: #5ac152;
     padding:20px;
     border-radius: 25px;
-    filter: drop-shadow( 10px 0 20px rgb(0, 92, 71)) invert( 85%);
+
+    /* filter: drop-shadow( 10px 0 20px rgb(0, 92, 71)) invert( 85%); */
+    /* filter: drop-shadow( 10px 0 20px #5ac152 ); */
 }
 
 .content-black--p-highlight:hover
 {
     color:rgb(206, 206, 206);
-    background-color: rgb(0, 32, 16);
+    background-color: rgb(238, 56, 255);
     padding:20px;
     border-radius: 25px;
-    filter: drop-shadow( 10px 0 20px rgb(7, 7, 7)) invert( 90%);
+    /* filter: drop-shadow( 10px 0 20px rgb(7, 7, 7)) invert( 90%); */
+    filter: drop-shadow( 10px 0 20px rgb(199, 17, 255)) invert( 90%);
 }
 
 body
 {
-    background-image: radial-gradient(rgb(118, 119, 90),rgb(34, 1, 72));
+    background-image: radial-gradient(#c5eefc,#00beff);
     object-fit: cover   ;
 }
 
@@ -296,13 +321,14 @@ body
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(
-        rgba(0,0,0,0.75),
+        #040404,
         rgba(0,0,0,0.75),
         url('data/images/QA.svg')
     );
 
-    background: rgb(34, 7, 44);
-    border: 2px inset rgb(9, 62, 27);
+    background: #5ac152;
+    background: #ffffff;
+    border: 2px inset rgb(223, 255, 233);
     border-top: 0px;
     border-radius: 10px;
 }
@@ -337,7 +363,8 @@ button.button--guidelines:hover
     width:20%; align-self: center;
     padding: 10px;
     border-radius: 30px;
-    background-color: rgb(205, 165, 206);
+    /* background-color: rgb(205, 165, 206); */
+    background-color: #5ac152;
 
 }
 
@@ -348,5 +375,12 @@ button.button--guidelines:hover
 }
 
 
+
+h3
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
 
 

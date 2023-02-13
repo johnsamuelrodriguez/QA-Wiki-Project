@@ -1,0 +1,15 @@
+.navbar a
+{
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:hover
+{
+    color: rgb(255, 255, 255);
+    color: #424242;
+}
+
+.txt
+{
+    text-shadow: 1px 1px 2px #424242;
+}
