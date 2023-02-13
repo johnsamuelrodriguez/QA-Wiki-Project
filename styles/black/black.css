@@ -274,8 +274,9 @@ h3
     padding: 50px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    border-style: groove;
-    border-color: #ffff1d;
+    border-style: outset;
+    border-color: #ffffff;
+    border-width: 15px;
     color: #424242;
     /* text-shadow: 1px 1px 2px #121212; */
     
