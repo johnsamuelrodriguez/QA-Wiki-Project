@@ -132,7 +132,7 @@ a:hover
     color: white;
     background: transparent;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .buttons-home:hover
@@ -146,7 +146,7 @@ a:hover
     border-radius: var(--button-home--border-radius);
     color: white;
     background: transparent;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     border:none;
 }

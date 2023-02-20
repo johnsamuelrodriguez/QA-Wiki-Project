@@ -160,7 +160,7 @@ html
     color: white;
     background: transparent;
     position: relative;
-    overflow: hidden;
+ 
 }
 
 .buttons-home.learn
@@ -174,7 +174,7 @@ html
     border-radius: var(--button-home--border-radius);
     color: white;
     background: transparent;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     border:none;
 }
