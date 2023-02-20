@@ -54,7 +54,7 @@ grid-template-columns: repeat(12, min-content);
    overflow-x: auto !important;
    grid-column-gap: 20px;
    position: relative;
-   overscroll-behavior-inline: contain;
+   /* overscroll-behavior-inline: contain; */
    height: 300px;
   
 }
