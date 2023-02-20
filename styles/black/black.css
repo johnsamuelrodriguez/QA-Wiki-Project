@@ -384,4 +384,49 @@ h3
 
 }
 
+.QA-h1
+{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
 
+}
+
+
+.QA-h1::before
+{
+}
+
+.QA-h1::after
+{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+    animation: swipe 1s ease ;
+}
+
+.content-black--p--index
+{
+}
+
+@keyframes swipe
+{
+     to{
+       left: 100%;
+    }
+}
+
+.index
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}

@@ -251,11 +251,11 @@ $( function(){
                 {
 
                     blocks.forEach( block => {
-                        block.style.cssText = 'scroll-snap-align: start';
+                        // block.style.cssText = 'scroll-snap-align: start';
                         });
 
-                        banner.style.cssText = 'scroll-snap-align: start';
-                        header.style.cssText = 'scroll-snap-align: start';
+                        // banner.style.cssText = 'scroll-snap-align: start';
+                        // header.style.cssText = 'scroll-snap-align: start';
                 }
 
 
