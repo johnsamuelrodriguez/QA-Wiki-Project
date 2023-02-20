@@ -16,5 +16,11 @@
 .spacing
 {
     white-space: pre;
+
+}
+
+.spacing--p
+{
+    max-width: 200px;
 }
 

@@ -90,6 +90,27 @@ var summaries_released =  [{
         'Status': 'Post Live QA - Passed'
     },
 
+    "020014":
+    {
+        'Description': '[Dev] Added YS color Scheme',
+        'Status': 'Post Live QA - Passed'
+    },
+
+    "020014":
+    {
+        'Description': '[Dev] Added snapping feature on quotes page',
+        'Status': 'Post Live QA - Passed'
+    },
+
+    "020014":
+    {
+        'Description': '[Dev] Removed black background on small screens',
+        'Status': 'Post Live QA - Passed'
+    },
+
+
+
+
 
     // "0000":
     // {

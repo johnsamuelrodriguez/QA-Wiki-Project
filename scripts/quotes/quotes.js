@@ -15,10 +15,10 @@ $( function() {
         let block = document.createElement('div');
 
         p.classList.add('content-black--p');
-        p.classList.add('spacing');
+        p.classList.add('spacing--p');
         block.classList.add('quotes--section-block');
 
-        block.style.cssText = "scroll-snap-align: start;";
+        // block.style.cssText = "scroll-snap-align: start;";
         header.classList.add('spacing');
 
         let title = '';
