@@ -108,6 +108,12 @@ var summaries_released =  [{
         'Status': 'Post Live QA - Passed'
     },
 
+    "020015":
+    {
+        'Description': '[Dev] Added Archive Tab',
+        'Status': 'Post Live QA - Passed'
+    },
+
 
 
 
