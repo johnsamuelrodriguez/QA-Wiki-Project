@@ -1,7 +1,5 @@
 $( function(){
 
-
-
     let checks = document.querySelectorAll('.check');
     console.log(checks);
 
