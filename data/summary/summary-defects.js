@@ -36,6 +36,18 @@ var summaries_defects =  [{
         'Status': 'Post Live QA - Passed'
     },
 
+    "330302":
+    {
+        'Description': '[QA]: third table is cut',
+        'Status': 'Post Live QA - Passed'
+    },
+
+    "3303021148":
+    {
+        'Description': '[Dev]: shifted table added scrollbars',
+        'Status': 'Post Live QA - Passed'
+    },
+
 
 
     // "00000":
