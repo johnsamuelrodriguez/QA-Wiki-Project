@@ -84,6 +84,8 @@
         justify-items: center;
         align-items: center;
         flex-wrap: wrap;
+        margin: 11px !important;
+        align-items: flex-start;
     }
 
     .cut
@@ -96,4 +98,5 @@
     {
         padding-left: 30px !important;
     }
+
 }
