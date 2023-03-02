@@ -1,13 +1,99 @@
 @media screen and (min-width: 500px) {
-p
+    .p-indent {
+        text-indent: 30px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    ol.defects {
+        counter-reset: defect;
+        padding-left: 30px;
+    }
+
+    ol.defects li::before {
+        counter-increment: defect;
+        padding-left: 30px;
+        /* content: counter(defect)') '; */
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    section {
+        margin: 3px 10%;
+    }
+
+   
+
+
+
+
+    h2,
+    p,
+    a {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    section {
+        margin: 30px 10%;
+    }
+
+    .cut
+    {
+        overflow-wrap: initial;
+        inline-size: initial;
+        
+        
+    }
+
+}
+
+@layer Globals
 {
-    text-indent: 30px;
-    margin-top: 3px;
 
-    margin: 3px 100px;
-    margin-bottom: 5px;
+    p
+    {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .p-italics
+    {
+        font-style: italic;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+    .img-container {
+        width: 80vw;
+        object-fit: contain;
+    }
+    
+    section {
+        margin: 10px;
+    }
+    
+    
+    .approach {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .cut
+    {
+        overflow-wrap: break-word;
+        inline-size: min-content;
+    }
+
+    ul
+    {
+        padding-left: 30px !important;
+    }
 }
-
-
-}
-
