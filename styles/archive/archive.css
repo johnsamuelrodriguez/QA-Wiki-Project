@@ -22,6 +22,11 @@ section {
     .sm-only {
         display: block !important;
     }
+
+    .sp3
+    {
+        align-self: flex-start;
+    }
 }
 
 @media screen {
@@ -134,12 +139,6 @@ li.no-bullet::marker {
 }
 
 
-#S3 {
-    justify-content: flex-start;
-    overflow: scroll;
-    flex-direction: column;
-}
-
 .sm-only {
     display: inline;
     align-self: center;
@@ -206,4 +205,12 @@ ul.ul-count > li::marker
 .course-content td:nth-of-type(2)
 {
     text-align: left;
+}
+
+
+.S
+{
+    justify-content: flex-start;
+    overflow: scroll;
+    flex-direction: column;
 }
