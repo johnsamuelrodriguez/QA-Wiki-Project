@@ -5,6 +5,8 @@
         margin-bottom: 3px;
     }
 
+   
+
     ol.defects {
         counter-reset: defect;
         padding-left: 30px;
@@ -53,6 +55,7 @@
 @layer Globals
 {
 
+
     p
     {
         margin-top: 3px;
@@ -63,6 +66,8 @@
     {
         font-style: italic;
     }
+
+    
 
     img {
         max-width: 100%;

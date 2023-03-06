@@ -23,13 +23,41 @@ section {
         display: block !important;
     }
 
-    .sp3
-    {
+    .sp3 {
         align-self: flex-start;
     }
+
+
+    img 
+    {
+        max-width: 100%;
+    }
+
+  
+
+
+
 }
 
+
 @media screen {
+
+
+    *
+    {
+        transition: all 0.3s linear;
+    }
+
+    .section---structure {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+
     table {
         background-color: white;
         padding: 30px;
@@ -93,9 +121,40 @@ section {
         /* min-width: 600px */
     }
 
-    ;
+    .p-indent-L2
+    {
+        text-indent: 30px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
 
 
+    .p-indent {
+        text-indent: 30px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .footer {
+        margin-bottom: 300px;
+    }
+
+  
+
+
+    .img-container {
+        width: 80vw;
+        object-fit: contain;
+        
+    }
+
+    .img--flow {
+        margin: 15px;
+        background-color: rgb(158 150 181);
+        border-radius: 22px;
+        padding: 5px;
+ 
+    }
 
 
 }
@@ -144,8 +203,7 @@ li.no-bullet::marker {
     align-self: center;
 }
 
-.center-flex
-{
+.center-flex {
     align-self: center;
 }
 
@@ -153,63 +211,74 @@ li {
     margin-bottom: 5px;
 }
 
-.p-italics
-{
+.p-italics {
     font-style: italic;
 }
 
-.col-heading
-{
+.col-heading {
     text-align: center;
 }
 
-.col-divider
-{
+.col-divider {
     background-color: rgb(233, 233, 233);
 
 }
 
-ul
-{
+ul {
     counter-reset: ul;
+
 }
 
-ul.ul-count > li
+
+ul.ul-count-letter
 {
+    list-style-type: lower-alpha;
+}
+
+ul.ul-count>li {
     counter-increment: ul;
+    margin-left: 30px;
+
 }
 
-ul.ul-count > li::marker
-{
+
+ul.ul-count>li::marker {
     content: counter(ul) '. ';
 }
 
-.ul-manual-count > li::marker
-{
+.ul-manual-count>li::marker {
     content: '';
-    
+
 }
 
-.ul-manual-count
+.ul--L1>li
 {
+    list-style-type: circle;
+}
+
+.ul-manual-count {
     padding-left: 20px;
 }
 
-.note-green
-{
+.note-green {
     color: rgb(178, 229, 101);
     color: rgb(169, 251, 45);
 
 }
 
-.course-content td:nth-of-type(2)
-{
+.note-red {
+    color: red;
+    color: rgb(255, 113, 113);
+
+    
+}
+
+.course-content td:nth-of-type(2) {
     text-align: left;
 }
 
 
-.S
-{
+.S {
     justify-content: flex-start;
     overflow: auto;
     flex-direction: column;
