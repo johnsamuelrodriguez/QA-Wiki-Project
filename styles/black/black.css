@@ -232,6 +232,7 @@ h3
     pointer-events: none;
     user-select: none;
     display: none;
+    z-index: 99;
 }
 
 #picture-backtop.active
