@@ -1,0 +1,323 @@
+@layer Desktop {
+
+    .sidebar---archive>h2 {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-left: 30px;
+    }
+
+    .sidebar-content---archive {}
+}
+
+.sidebar-content---archive {
+    margin: 0;
+}
+
+section {
+    margin: 3% !important;
+}
+
+
+@media screen and (min-width: 600px) {
+    .table-of-contents {
+        align-self: center
+    }
+
+  
+}
+
+@media screen and (max-width: 600px) {
+    .sm-only {
+        display: block !important;
+    }
+
+    .sp3 {
+        align-self: flex-start;
+    }
+
+
+    img {
+        max-width: 100%;
+    }
+
+    .section-table
+    {
+        justify-content: flex-start !important;
+        overflow: auto;
+    }
+
+
+}
+
+
+@media screen {
+
+
+    * {
+        transition: all 0.3s linear;
+    }
+
+    .section---specialization {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+
+
+
+
+    table {
+        background-color: white;
+        padding: 30px;
+        text-align: center;
+        border-collapse: collapse;
+        border: 3px solid rgb(0, 0, 0);
+
+        table-layout: fixed;
+        margin: 20% 0;
+        max-width: 90vw;
+        color: black;
+        align-self: center;
+
+    }
+
+    table {
+        margin: 3px;
+        background-color: black;
+    }
+
+    tr:first-of-type>th {
+        background-color: rgb(232, 225, 225);
+        /* border: 3px solid green; */
+    }
+
+    th,
+    td {
+        background-color: rgb(248, 244, 244);
+        border: 1px solid rgb(84, 13, 13);
+        width: fit-content;
+        padding: clamp(5px, 10px, 20px);
+    }
+
+    caption {
+        background-color: rgb(248, 244, 244);
+        border-style: inset;
+        padding: 20px;
+        font-weight: bold;
+        font-size: clamp(2rem, 0.5vw + 0.5rem, 4rem);
+
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    p {
+        margin: 20px 0;
+        color: black;
+    }
+
+    section {
+        margin: 20px 20%;
+    }
+
+    .section-table {
+        margin: 20px 20%;
+        display: flex;
+
+        justify-content: center;
+        /* min-width: 600px */
+    }
+
+    .p-indent-L2 {
+        text-indent: 30px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+
+    .p-indent {
+        text-indent: 30px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    .footer {
+        margin-bottom: 300px;
+    }
+
+
+
+
+    .img-container {
+        width: 80vw;
+        object-fit: contain;
+
+    }
+
+    .img--flow {
+        margin: 15px;
+        background-color: rgb(158 150 181);
+        border-radius: 22px;
+        padding: 5px;
+
+    }
+
+
+}
+
+
+
+.sp2 td:nth-of-type(2),
+.sp1 td:nth-of-type(2),
+.sp3 td:nth-of-type(1) {
+    text-align: left;
+}
+
+ul {
+    justify-content: left;
+    text-align: left;
+    margin: 0;
+    padding-left: 40px;
+}
+
+li {
+    list-style-position: outside;
+}
+
+ul>li {
+    color: rgb(70, 70, 70)
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+li.no-bullet::marker {
+    content: '- ';
+}
+
+
+.sidebar-content---archive {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+.sm-only {
+    display: inline;
+    align-self: center;
+}
+
+.center-flex {
+    align-self: center;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.p-italics {
+    font-style: italic;
+}
+
+.col-heading {
+    text-align: center;
+}
+
+.col-divider {
+    background-color: rgb(233, 233, 233);
+
+}
+
+
+ul {
+    counter-reset: ul;
+
+}
+
+
+ul.ul-count-letter {
+    list-style-type: lower-alpha;
+}
+
+ul.ul-count>li {
+    counter-increment: ul;
+    margin-left: 30px;
+
+}
+
+
+
+ul {
+    justify-content: left;
+    text-align: left;
+    margin: 0;
+    padding-left: 40px;
+    text-align: left;
+    margin: 0;
+    padding-left: 0;
+}
+
+
+ul.ul-count>li::marker {
+    content: counter(ul) '. ';
+}
+
+.ul-manual-count>li::marker {
+    content: '';
+
+}
+
+.ul--L1>li {
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+.ull
+{
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
+.ul-manual-count {
+    padding-left: 20px;
+}
+
+.note-green {
+    color: rgb(178, 229, 101);
+    color: rgb(169, 251, 45);
+
+}
+
+.note-red {
+    color: red;
+    color: rgb(255, 113, 113);
+
+
+}
+
+.course-content td:nth-of-type(2) {
+    text-align: left;
+}
+
+
+.S {
+    justify-content: flex-start;
+    overflow: auto;
+    flex-direction: column;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header.header--title
+{
+    font-size: 25px ;
+}
