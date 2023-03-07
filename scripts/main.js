@@ -192,7 +192,7 @@ $( function()
 $( function(){
 
 
-    if ( window.location.href.includes('quotes.html') || window.location.href.includes('guidelines.html') || window.location.href.includes('archive.html') )
+    if ( window.location.href.includes('quotes.html') || window.location.href.includes('guidelines.html') || window.location.href.includes('archive.html') || window.location.href.includes('specialization.html'))
     {
         
 

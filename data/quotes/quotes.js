@@ -86,5 +86,17 @@ var quotes = [
  
      },
 
+     {
+        header: 
+        [
+            'Be the one ...'
+        ],
+        content:
+        [
+            'be someone to look up to',
+            'not that someone who looks down unto others'
+        ]
+     },
+
 
 ]
