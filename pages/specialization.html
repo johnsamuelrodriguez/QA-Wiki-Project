@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QA Wiki | Flow</title>
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/top-nav.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/cards.css">
+    <link rel="stylesheet" href="../styles/flow.css">
+
+    <link rel="stylesheet" href="../styles/black/black.css">
+    <link rel="stylesheet" href="../styles/specialization/specialization.css">
+
+    <script src="../scripts/jquery/jquery-3.6.2.js"></script>
+    <script src="../scripts/main.js" type="text/javascript" defer></script>
+
+    <script src="../data/summary/summary-released.js" type="text/javascript"></script>
+    <script src="../data/summary/summary-defects.js" type="text/javascript"></script>
+    <script src="../data/images.js" type="text/javascript"></script>
+    <script src="../data/links.js" type="text/javascript"></script>
+
+
+
+    <script src="../scripts/specialization/specialization.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../data/images/QA_v2s.svg" id="QA-logo" class="logo">
+            <ul>
+                <li> <a href="guidelines.html" class="good">Guidelines</a> </li>
+                <li> <a href="procedures.html" class="good">Procedures</a> </li>
+                <li> <a href="flow.html" class="good">Flow</a> </li>
+                <li> <a href="#" class="good">Summary Reports</a> </li>
+                <li> <a href="quotes.html" class="good">Quotes</a> </li>
+                <li> <a href="archive.html" class="good">Archive</a> </li>
+                <li> <a href="approach.html" class="good">Approach</a> </li>
+                <li> <a href="structure.html" class="good">Structure</a> </li>
+                <li> <a href="specialization.html" class="good">Specialization</a> </li>
+            </ul>
+        </div>
+
+        <div class="content-black">
+
+            <h1> SPECIALIZATION </h1>
+            <span id="picture-backtop">
+                <picture>
+                    <img id="back-to-top" src="../data/images/icons/back.svg" />
+                </picture>
+            </span>
+
+        </div>
+
+        <section class="section---specialization">
+            <table>
+                <caption>Document History</caption>
+                <tr>
+                    <th>Version</th>
+                    <th>Date</th>
+                    <th>Author</th>
+                    <th>Change Status</th>
+                </tr>
+                <tr>
+                    <td>0.1</td>
+                    <td>June 7, 2022</td>
+                    <td>Maricar Asuncion</td>
+                    <td>Initial Draft</td>
+                </tr>
+                <tr>
+                    <td>0.2</td>
+                    <td>June 9, 2022</td>
+                    <td>Ria Skeet</td>
+                    <td>Course Matrix / <br> Checklist</td>
+                </tr>
+                <tr>
+                    <td>0.3</td>
+                    <td>June 10, 2022</td>
+                    <td>Ria Skeet</td>
+                    <td>Revised Draft</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section class="section---specialization">
+            <article class="table-of-contents">
+                <header>
+                    <h2> Table of Contents </h2>
+                </header>
+                <details>
+
+                    <summary>
+                        show/hide Mobile Specialization 1
+                    </summary>
+                    <ul>
+
+
+                        <li><a class="toc" href="#SP1-introduction" target="_blank">Introduction </a></li>
+                        <li><a href="#SP1-objective" target="_blank" class="toc">Objective</a></li>
+                        <li><a href="#SP1-course-levels" class="toc"> Course Levels</a></li>
+                        <li>Intended Audience</li>
+                        <li><a href="#SP1-pre-requisite" target="_blank" class="toc">Pre-requisite</a></li>
+                        <li><a href="#SP1-objectives" class="toc">Learning Objectives</a></li>
+                        <li><a href="#SP1-course-content" class="toc">Mobile Application Testing Specialist 1 Course
+                                Content</a></li>
+                        <li><a href="#SP1-RRL" class="toc">Course Content Related Reading Materials Links</a></li>
+                        <li><a href="#SP1-RVL" class="toc">Course Content Related Video Links</a></li>
+                        <li><a href="#SP1-summary" class="toc">Summary</a></li>
+                        <li><a href="#SP1-references" class="toc">References</a></li>
+                    </ul>
+                </details>
+                <details>
+
+                    <summary>
+                        show/hide Mobile Specialization 2
+                    </summary>
+                    <ul>
+
+
+                        <li><a class="toc" href="#SP2-introduction" target="_blank">Introduction </a></li>
+                        <li><a href="#SP2-objective" target="_blank" class="toc">Objective</a></li>
+                        <li><a href="#SP2-course-levels" class="toc"> Course Levels</a></li>
+                        <li>Intended Audience</li>
+                        <li><a href="#SP2-pre-requisite" target="_blank" class="toc">Pre-requisite</a></li>
+                        <li><a href="#SP2-objective" class="toc">Learning Objectives</a></li>
+                        <li><a href="#SP2-course-content" class="toc">Mobile Application Testing Specialist 2 Course
+                                Content</a></li>
+                        <li><a href="#SP2-RRML" class="toc">Course Content Related Reading Materials Links</a></li>
+                        <li><a href="#SP2-CCRVL" class="toc">Course Content Related Video Links</a></li>
+                        <li><a href="#SP2-summary" class="toc">Summary</a></li>
+                        <li><a href="#SP2-references" class="toc">References</a></li>
+                    </ul>
+                </details>
+
+                <details>
+
+                    <summary>
+                        show/hide Mobile Specialization 3
+                    </summary>
+                    <ul>
+
+
+                        <li><a class="toc" href="#SP3-introduction" target="_blank">Introduction </a></li>
+                        <li><a href="#SP3-objective" target="_blank" class="toc">Objective</a></li>
+                        <li><a href="#SP3-course-levels" class="toc"> Course Levels</a></li>
+                        <li><a href="#SP3-intended-audience" class="toc">Intended Audience</a></li>
+                        <li><a href="#SP3-pre-requisite" target="_blank" class="toc">Pre-requisite</a></li>
+                        <li><a href="#SP3-learning-objectives" class="toc">Learning Objectives</a></li>
+                        <li><a href="#SP3-course-content" class="toc">Mobile Application Testing Specialist 1 Course
+                                Content</a></li>
+                        <li><a href="#SP3-CCRRML" class="toc">Course Content Related Reading Materials Links</a></li>
+                        <li><a href="#SP3-CCRVL" class="toc">Course Content Related Video Links</a></li>
+                        <li><a href="#SP3-summary" class="toc">Summary</a></li>
+                        <li><a href="#SP3-references" class="toc">References</a></li>
+                    </ul>
+                </details>
+
+            </article>
+
+
+            <section>
+                <header class="header--title">
+                    <h1> Mobile Application Testing <br>
+                        Training Plan <br>
+                        Specialist 1
+                    </h1>
+                </header>
+            </section>
+
+
+            <section id="SP1-introduction">
+
+
+
+
+
+                <h2>Introduction</h2>
+                <p class="p-indent">Mobile Application Testing involves evaluating the software against its technical
+                    and
+                    business requirements, in order to determine its effectiveness. Mobile Application Testing likewise
+                    involves implementing techniques in order to uncover software defects</p>
+                <p class="p-indent">With these being said, You_Source is committed to provide our Quality Assurance
+                    Engineers with a Mobile Application Testing course content guide to make their learning experience
+                    as
+                    simple as possible. The details of the Mobile Application Testing course content guide can be found
+                    in
+                    the sections below.</p>
+
+            </section>
+
+            <section id="SP1-objective">
+                <h2> The QA Mobile Specialist</h2>
+                <p class="p-indent">Mobile Application Tester is focused on checking mobile application software for
+                    functionality, usability, and consistency on handheld mobile devices. Mobile Application Testing can
+                    either be automated or manual. </p>
+
+            </section>
+
+            <section id="SP1-course-levels">
+                <h2> Course levels</h2>
+                <p class="p-indent">QA Division identified 2 Levels of Mobile Application Testing training to become
+                    You-Source QA Mobile Specialist.</p>
+            </section>
+
+            <section>
+                <h2>Expectation:</h2>
+                <p>As a QA mobile specialist you are expected to be able to:</p>
+                <ul>
+                    <li>To Identify issues and defects specifically on mobile applications, mobile web applications and
+                        hybrid applications across different mobile OS and devices.</li>
+                    <li>To create a testing plan and strategize testing using the different mobile testing type and
+                        techniques.</li>
+                    <li>To start the testing activities of a mobile project</li>
+
+                </ul>
+            </section>
+
+            <section id="SP1-pre-requisite">
+                <h2>Requirement:</h2>
+                <ul>
+                    <li>In order to qualify for mobile specialist training you need to finish the Mobile testing
+                        introduction to acquire basic understanding on how mobile applications differ from web based
+                        applications. This document provides reading materials and video materials to help you go
+                        through the course of training.</li>
+                    <li>A QA who would like to take the course should be atleast Quality Analyst 2 to qualify.</li>
+                </ul>
+            </section>
+
+
+            <section class="section-table" id="SP1-course-content">
+                <table>
+                    <caption>MOBILE APPLICATION TESTING SPECIALIST 1: <br>Pre-specialist Course Content</caption>
+                    <tr>
+                        <th></th>
+                        <th>Topic Description</th>
+                        <th>Links</th>
+                        <th>Duration <span class="note-green"><br>[Estimate]</span></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>What is Mobile Application Testing?</td>
+                        <td><a href="https://testsigma.com/mobile-testing"
+                                target="_blank">https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+
+                        <td>
+
+                            <ul class="ul--L1">
+                                Types of Mobile Apps
+                                <li>Native Apps</li>
+                                <li>Web Apps</li>
+                                <li>Hybrid Apps</li>
+                            </ul>
+                        </td>
+                        <td><a href="https://testsigma.com/mobile-testing
+
+                            " target="_blank">https://testsigma.com/mobile-testing
+
+                            </a></td>
+                        <td>0.50</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing - Application</td>
+                        <td><a href="https://www.tutorialspoint.com/mobile_testing/mobile_testing_application.htm"
+                                target="_blank">https://www.tutorialspoint.com/mobile_testing/mobile_testing_application.htm</a>
+                        </td>
+                        <td>0.50</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Web Testing</td>
+                        <td><a href="https://testsigma.com/mobile-testing
+
+                            " target="_blank">https://testsigma.com/mobile-testing
+
+                            </a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing Devices</td>
+                        <td><a href="https://www.tutorialspoint.com/mobile_testing/mobile_testing_device_types.htm"
+                                target="_blank">https://www.tutorialspoint.com/mobile_testing/mobile_testing_device_types.htm</a>
+                        </td>
+                        <td>0.50</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="SP1-objectives">
+                <h2> MOBILE APPLICATION TESTING SPECIALIST 1: </h2>
+                <p class="p-indent">A QA mobile specialist 1 possess fundamental testing techniques and knowledge in
+                    order to test the functionality distinct in mobile applications, able to distinguish the usability
+                    and consistency of a mobile application across different mobile devices.</p>
+                <p>
+                    See <a
+                        href="https://docs.google.com/spreadsheets/d/1_4LlAcgoCzTf2M9XkpjO84yLsbtdOEVyCx-lzlMYoQE/edit#gid=0"
+                        target="_blank">QA Mobile specialist 1 checklist</a>
+                    <br> Expectations:
+                </p>
+
+                <ul class="ul-count">
+                    <li>Able to test mobile applications, mobile web applications and hybrid application across mobile
+                        devices (brand, os, browsers).</li>
+                    <li>Able to use and take advantage of different mobile connectivity and technologies.</li>
+                    <li>Able to test performance of the app and perform advanced approaches in order to reveal apps
+                        vulnerabilities and down time.</li>
+                    <li>Knowledgeable in automating mobile functionalities with time constraints like push notification,
+                        updates,load and peak.</li>
+                </ul>
+
+
+            </section>
+
+            <section class="section-table" id="SP1-RRL">
+
+
+                <table>
+                    <caption>
+                        <h2>
+                            Course Content Related Reading Materials Links
+                        </h2>
+                    </caption>
+                    <tr>
+                        <th></th>
+                        <th>Topic</th>
+                        <th>Links </th>
+                        <th>Duration <span class="note-good"><br>[Estimate]</span></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How Is Mobile Testing Different From Web Testing?
+                            <ul class="ul--L1">
+                                <li>Screen Size</li>
+                                <li>Storage</li>
+                                <li>Performance Speed</li>
+                                <li>Internet Access</li>
+                                <li>Cross-Platform Compatibility</li>
+                                <li>Offline Mode</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing – Planning & Tools
+                        </td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_device_testing_planning_tools.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_device_testing_planning_tools.htm
+                        </td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How To Test a Mobile Application [Step by Step]
+                            <ul class="ul--L1">
+                                <li>Planning</li>
+                                <li>Identifying testing types</li>
+                                <li>Test case and script design </li>
+                            </ul>
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile site testing strategy key points
+                            <ul class="ull">
+                                <li>Emulators of simulators?</li>
+                                <li>Cloud-based testing of the mobile application</li>
+                                <li>Mobile manual and automated testing.</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://geteasyqa.com/qa/mobile-apps-testing/'
+                                target='_blank'>https://geteasyqa.com/qa/mobile-apps-testing/</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Emulator Vs Simulator</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_testing_emulator_simulator.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_testing_emulator_simulator.htm
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Types And Techniques Of Testing Mobile Applications
+                            <ul class="ull">
+                                <li>Functional Testing</li>
+                                <li>Compatibility Testing</li>
+                                <li>Usability Testing</li>
+                                <li>Installation Testing (Build and Installation)</li>
+                                <li>Exploratory Testing</li>
+                                <li>Interrupt Testing</li>
+                                <li>Stress Testing</li>
+                                <li>Localization</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile application testing stages
+                            <ul class="ull">
+                                <li>Documentation Testing</li>
+                                <li>Functional Testing</li>
+                                <li>Usability testing</li>
+                                <li>UI (User Interface) testing</li>
+                                <li>Compatibility (Configuration) testing</li>
+                                <li>Localization testing</li>
+                                <li>Interrupt Testing</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://geteasyqa.com/qa/mobile-apps-testing/'
+                                target='_blank'>https://geteasyqa.com/qa/mobile-apps-testing/</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing - UI</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_testing_ui.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_testing_ui.htm</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Why Mobile Testing is Important for Your Application?</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How To Strategize Your Mobile Application Testing Efforts?</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile testing On Real Devices Or Virtual Devices?</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How To Create A Mobile Testing Plan?
+                            <ul class="ull">
+                                <li>Device Testing</li>
+                                <li>Network Connectivity Testing</li>
+                                <li>OS Version Testing</li>
+                                <li>Security Testing</li>
+                                <li>Interrupt Conditions Testing</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Practical Application
+                            How to create a Mobile Testing Plan Activity</td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            Best Cloud-Based Mobile App Testing Service Providers In 2022
+
+                        </td>
+                        <td><a href='https://www.softwaretestinghelp.com/cloud-mobile-testing-services/'
+                                target='_blank'>https://www.softwaretestinghelp.com/cloud-mobile-testing-services/</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Top 10 Mobile Testing Service Provider Companies</td>
+                        <td><a href='https://www.softwaretestinghelp.com/mobile-testing-services/'
+                                target='_blank'>https://www.softwaretestinghelp.com/mobile-testing-services/</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile App Beta Testing Services (IOS And Android Beta Testing Tools)</td>
+                        <td><a href='https://www.softwaretestinghelp.com/mobile-app-beta-testing-services/'
+                                target='_blank'>https://www.softwaretestinghelp.com/mobile-app-beta-testing-services/
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">OTHER HELPFUL READING MATERIALS</td>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>What is Mobile Application Testing?</td>
+                        <td><a href='https://applitools.com/blog/what-is-mobile-testing/'
+                                target='_blank'>https://applitools.com/blog/what-is-mobile-testing/</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Fundamentals of Mobile Testing</td>
+                        <td><a href='https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing'
+                                target='_blank'>https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How to Test a Mobile Application [Step by Step]</td>
+                        <td><a href='https://www.testbytes.net/blog/how-to-test-a-mobile-application/'
+                                target='_blank'>https://www.testbytes.net/blog/how-to-test-a-mobile-application/</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How To Test Mobile Applications Manually</td>
+                        <td><a href='https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/'
+                                target='_blank'>https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How to Test Mobile Applications Manually</td>
+                        <td><a href='https://www.browserstack.com/guide/how-to-test-mobile-applications-manually'
+                                target='_blank'>https://www.browserstack.com/guide/how-to-test-mobile-applications-manually
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>5 Points to Consider When Testing Mobile Apps</td>
+                        <td><a href='https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps'
+                                target='_blank'>https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>The Ultimate Mobile Testing Guide: 11 Tips to Test Your App Effectively</td>
+                        <td><a href='https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/'
+                                target='_blank'>https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How to Perform Manual Mobile Testing Effectively?</td>
+                        <td><a href='https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/'
+                                target='_blank'>https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>All You Need To Know About Mobile App Testing</td>
+                        <td><a href='https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/'
+                                target='_blank'>https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>A Complete Guide to Successfully Win a Mobile Testing Job</td>
+                        <td><a href='https://katalon.com/resources-center/blog/mobile-testing-job'
+                                target='_blank'>https://katalon.com/resources-center/blog/mobile-testing-job</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Why Your Mobile App Needs Testing </td>
+                        <td><a href='https://skelia.com/articles/mobile-app-needs-testing/'
+                                target='_blank'>https://skelia.com/articles/mobile-app-needs-testing/</td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+            </section>
+
+            <section class="section-table" id="SP1-RVL">
+                <table>
+                    <caption> MOBILE APPLICATION TESTING SPECIALIST 1:
+                        Course Content Related Video Links
+                    </caption>
+                    <tr>
+                        <th>Topic Description</th>
+                        <th>YouTube Related Video Title</th>
+                        <th>YouTube Related Video Link</th>
+                        <th>Video Duration</th>
+                    </tr>
+
+                    <tr>
+                        <td>What is Mobile Application Testing?
+                        </td>
+                        <td>Mobile App Testing for beginners Day 01. Mobile App Testing Tutorial for beginners android
+                        </td>
+                        <td><a href='https://www.youtube.com/watch?v=mTIdoDEuXrM'
+                                target='_blank'>https://www.youtube.com/watch?v=mTIdoDEuXrM</td>
+                        <td>5:11</td>
+                    </tr>
+                    <tr>
+                        <td>Types of Mobile Apps
+                            <ul class="ull">
+                                <li>Native Apps</li>
+                                <li>Web Apps</li>
+                                <li>Hybrid Apps</li>
+                            </ul>
+                        </td>
+                        <td>Types Of Mobile APPS | Different Types of Mobile Applications - Native, Hybrid and Web |
+                            Mobile APPS</td>
+                        <td><a href='https://www.youtube.com/watch?v=g9LENGzRbnQ'
+                                target='_blank'>https://www.youtube.com/watch?v=g9LENGzRbnQ</td>
+                        <td>5:30</td>
+                    </tr>
+                    <tr>
+                        <td>Native Vs Hybrid Vs Mobileweb</td>
+                        <td>Mobile Apps - Web vs. Native vs. Hybrid</td>
+                        <td><a href='https://www.youtube.com/watch?v=ZikVtdopsfY'
+                                target='_blank'>https://www.youtube.com/watch?v=ZikVtdopsfY</td>
+                        <td>13:03</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Testing Devices</td>
+                        <td>Mobile testing on real Android & iOS devices - pCloudy Demo Video 2019</td>
+                        <td><a href='https://www.youtube.com/watch?v=8rUF5B8CFHk'
+                                target='_blank'>https://www.youtube.com/watch?v=8rUF5B8CFHk</td>
+                        <td>9:28</td>
+                    </tr>
+                    <tr>
+                        <td>How Is Mobile Testing Different From Web Testing?</td>
+                        <td>Difference Between Mobile App Testing and Web Testing</td>
+                        <td><a href='https://www.youtube.com/watch?v=RrbYEKdYvSM'
+                                target='_blank'>https://www.youtube.com/watch?v=RrbYEKdYvSM</td>
+                        <td>4:51</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile application specifics</td>
+                        <td>Mobile Apps - Web vs. Native vs. Hybrid</td>
+                        <td><a href='https://www.youtube.com/watch?v=ZikVtdopsfY'
+                                target='_blank'>https://www.youtube.com/watch?v=ZikVtdopsfY</td>
+                        <td>13:03</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Web Testing</td>
+                        <td>Web & Mobile App Testing With Perfecto Demo</td>
+                        <td><a href='https://www.youtube.com/watch?v=ho3FSjNoeSs'
+                                target='_blank'>https://www.youtube.com/watch?v=ho3FSjNoeSs</td>
+                        <td>13:47</td>
+                    </tr>
+                    <tr>
+                        <td>How To Test a Mobile Application [Step by Step]</td>
+                        <td>10 Step Mobile Application Testing Process - Testbytes</td>
+                        <td><a href='https://www.youtube.com/watch?v=1ygfipvMOj0'
+                                target='_blank'>https://www.youtube.com/watch?v=1ygfipvMOj0</td>
+                        <td>2:12</td>
+                    </tr>
+                    <tr>
+                        <td>Emulator Vs Simulator</td>
+                        <td>Mobile testing on emulators & simulators: types, differences, usage</td>
+                        <td><a href='https://www.youtube.com/watch?v=1ibjrs6eQqA'
+                                target='_blank'>https://www.youtube.com/watch?v=1ibjrs6eQqA</td>
+                        <td>4:35</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile site testing strategy key points
+                            <ul class="ull">
+                                <li>Emulators or simulators?</li>
+                            </ul>
+                        </td>
+                        <td>Mobile testing on emulators & simulators: types, differences, usage</td>
+                        <td><a href='https://www.youtube.com/watch?v=1ibjrs6eQqA'
+                                target='_blank'>https://www.youtube.com/watch?v=1ibjrs6eQqA</td>
+                        <td>4:35</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile site testing strategy key points
+                            <ul class="ull">
+                                <li>Cloud-based testing of the mobile application</li>
+                            </ul>
+                        </td>
+                        <td>Building Cloud-based Mobile Testing with Real Mobile Devices (Webinar)</td>
+                        <td><a href='https://www.youtube.com/watch?v=wqiwqWyIP5s'
+                                target='_blank'>https://www.youtube.com/watch?v=wqiwqWyIP5s</td>
+                        <td>18:58</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile site testing strategy key points
+                            <ul class="ull">
+                                <li>Mobile manual and automated testing.</li>
+                            </ul>
+                        </td>
+                        <td>Mobile Test Automation 101: Everything You Need to Know About Appium</td>
+                        <td><a href='https://www.youtube.com/watch?v=aZS7HrNfyIk'
+                                target='_blank'>https://www.youtube.com/watch?v=aZS7HrNfyIk</td>
+                        <td>20:01</td>
+                    </tr>
+                    <tr>
+                        <td>How To Create A Mobile Testing Plan? </td>
+                        <td>Mobile App Testing Best Practices: Building a Complete, Multi-Stage Test Strategy</td>
+                        <td><a href='https://www.youtube.com/watch?v=jjDxP0qiEZk'
+                                target='_blank'>https://www.youtube.com/watch?v=jjDxP0qiEZk</td>
+                        <td>1:00</td>
+                    </tr>
+                    <tr>
+                        <td>Device Testing</td>
+                        <td>Mobile App Testing Best Practices: Building a Complete, Multi-Stage Test Strategy</td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Network Connectivity Testing</td>
+                        <td>Mobile App Testing Best Practices: Building a Complete, Multi-Stage Test Strategy</td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>OS Version Testing</td>
+                        <td>Mobile App Testing Best Practices: Building a Complete, Multi-Stage Test Strategy</td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Security Testing</td>
+                        <td>Mobile App Testing Best Practices: Building a Complete, Multi-Stage Test Strategy</td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Interrupt Conditions Testing</td>
+                        <td>Mobile App Testing Best Practices: Building a Complete, Multi-Stage Test Strategy</td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile testing On Real Devices Or Virtual Devices?</td>
+                        <td>Test Your Android And iOS Apps On Real Device Cloud of 3000+ Devices| LambdaTest</td>
+                        <td><a href='https://www.youtube.com/watch?v=vDHFbEjXxdc'
+                                target='_blank'>https://www.youtube.com/watch?v=vDHFbEjXxdc</td>
+                        <td>2:31</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li> Documentation</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li> Functional</li>
+                            </ul>
+                        </td>
+                        <td>Checklist for mobile application testing (functional testing) | test scenarios | test cases
+                        </td>
+                        <td><a href='https://www.youtube.com/watch?v=U6qL0cnA9RQ'
+                                target='_blank'>https://www.youtube.com/watch?v=U6qL0cnA9RQ</td>
+                        <td>4:03</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Compatibility</li>
+                            </ul>
+                        </td>
+                        <td>Software Testing Training | Compatibility Testing for Mobile Apps and Websites</td>
+                        <td><a href='https://www.youtube.com/watch?v=ASKqyO3-fdU'
+                                target='_blank'>https://www.youtube.com/watch?v=ASKqyO3-fdU</td>
+                        <td>8:33</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Usability</li>
+                            </ul>
+                        </td>
+                        <td>Usability test setup for mobile</td>
+                        <td><a href='https://www.youtube.com/watch?v=hwS8NIh-g0Y'
+                                target='_blank'>https://www.youtube.com/watch?v=hwS8NIh-g0Y</td>
+                        <td>6:56</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Installation (Build and Installation)</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li> Exploratory</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            • Interrupt Testing</td>
+                        <td>Learn Mobile Testing Approach
+                            Note: Interrupt Testing is at 2:07
+                            Learn Mobile Testing Approach
+                            Note: Interrupt Testing is at 2:07
+                            Learn Mobile Testing Approach
+                            Learn Mobile Testing Approach
+                            Note: Interrupt Testing is at 2:07
+                        </td>
+                        <td><a href='https://www.youtube.com/watch?v=Y6lp3VtafM0'
+                                target='_blank'>https://www.youtube.com/watch?v=Y6lp3VtafM0</td>
+                        <td>4:53</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>User Interface (UI)</li>
+                            </ul>
+                        </td>
+                        <td>User Interface Testing | DevOps for Mobile <Automation>
+
+                                <Automation>
+                        </td>
+                        <td><a href='https://docs.microsoft.com/en-us/shows/on-net/user-interface-testing--devops-for-mobile'
+                                target='_blank'>https://docs.microsoft.com/en-us/shows/on-net/user-interface-testing--devops-for-mobile
+                        </td>
+                        <td>4:22</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Stress Testing</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Localization</li>
+                            </ul>
+                        </td>
+                        <td>How To Do Localization Testing</td>
+                        <td><a href='https://www.youtube.com/watch?v=p1vGxNUGZhk'
+                                target='_blank'>https://www.youtube.com/watch?v=p1vGxNUGZhk</td>
+                        <td>11:05</td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section id="SP1-summary">
+                <h2> Summary </h2>
+                <p class="p-indent">When Mobile Applications are developed, one of the main goals should always be to
+                    provide the client and customer with the best possible experience. And in pursuit of perfection, it
+                    is important to ensure that the software is one that meets the requirements and functions
+                    consistently. </p>
+                <p class="p-indent">What then is the secret in making sure that a Mobile Application is error free?
+                    Aside from a good workflow between developers and testers, another important component is making
+                    sure that our Quality Assurance Engineers are qualified and equipped with the necessary skills, in
+                    alignment with You_Source’s aim to always deliver a SUPERB software,
+
+                </p>
+            </section>
+
+            <section id="SP1-references">
+                <h2> References</h2>
+                <ul class="ul--L1">
+                    <li><a href='https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/'
+                            target='_blank'>ALL YOU NEED TO KNOW ABOUT MOBILE APP TESTING</a></li>
+                    <li><a href='https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/'
+                            target='_blank'>The Ultimate Mobile Testing Guide: 11 Tips to Test Your App Effectively</a>
+                    </li>
+                    <li><a href='https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps'
+                            target='_blank'>5 POINTS TO CONSIDER WHEN TESTING MOBILE APPS</a></li>
+                    <li><a href='https://www.softwaretestinghelp.com/beginners-guide-to-mobile-application-testing/'
+                            target='_blank'>Mobile App Testing Tutorials (A Complete Guide With 30+ Tutorials)</a></li>
+                    <li><a href='https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/'
+                            target='_blank'>How to Perform Manual Mobile Testing Effectively?</a></li>
+                    <li><a href='https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing'
+                            target='_blank'>FUNDAMENTALS OF MOBILE TESTING</a></li>
+                    <li><a href='https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/'
+                            target='_blank'>How To Test Mobile Applications Manually</a></li>
+                    <li><a href='https://applitools.com/blog/what-is-mobile-testing/' target='_blank'>"What is Mobile
+                            Testing? Getting Started "</a></li>
+                    <li><a href='https://www.udemy.com/course/mobiletesting/' target='_blank'>Mobile Application Manual
+                            Testing - Android Application</a></li>
+                    <li><a href='https://www.youtube.com/watch?v=wZxwq9lXF2E' target='_blank'>Learn mobile application
+                            testing from Scratch | Mobile application testing for beginners</a></li>
+                    <li><a href='https://www.browserstack.com/guide/how-to-test-mobile-applications-manually'
+                            target='_blank'>How to Test Mobile Applications Manually</a></li>
+                    <li><a href='https://www.perfecto.io/blog/mobile-testing' target='_blank'>What Is Mobile Device
+                            Testing? Strategies for Testing on Devices</a></li>
+                    <li><a href='https://geteasyqa.com/qa/mobile-apps-testing/' target='_blank'>How to test mobile
+                            application</a></li>
+                    <li><a href='https://testsigma.com/mobile-testing' target='_blank'>Everything you need to know about
+                            Mobile Testing | An essential guide to Mobile Testing</a></li>
+                    <li><a href='https://www.guru99.com/testing-mobile-apps.html' target='_blank'>Mobile Apps Testing:
+                            Sample Test Cases & Test Scenarios</a></li>
+                    <li><a href='https://www.tutorialspoint.com/mobile_testing/index.htm' target='_blank'>Mobile Testing
+                            Tutorial</a></li>
+                    <li><a href='https://www.testbytes.net/blog/how-to-test-a-mobile-application/' target='_blank'>How
+                            to Test a Mobile Application [Step by Step] </a></li>
+                    <li><a href='https://katalon.com/resources-center/blog/mobile-testing-job' target='_blank'>A
+                            Complete Guide to Successfully Win a Mobile Testing Job</a></li>
+                    <li><a href='https://skelia.com/articles/mobile-app-needs-testing/' target='_blank'>Why Your Mobile
+                            App Needs Testing </a></li>
+                    <li><a href=' https://www.clariontech.com/blog/importance-of-mobile-app-testing'
+                            target='_blank'>Importance of Mobile App Testing </a></li>
+                </ul>
+            </section>
+
+            <section class="footer">
+
+            </section>
+
+        </section>
+
+
+
+        <section class="section---specialization">
+
+            <header class="header--title">
+                <h1> Mobile Application Testing <br>
+                    Training Plan <br>
+                    Specialist 2
+                </h1>
+            </header>
+            <section id="SP2-introduction">
+                <h2>Introduction</h2>
+                <p class="p-indent">Mobile Application Testing involves evaluating the software against its technical
+                    and business requirements, in order to determine its effectiveness. Mobile Application Testing
+                    likewise involves implementing techniques in order to uncover software defects.</p>
+                <p class="p-indent">With these being said, You_Source is committed to provide our Quality Assurance
+                    Engineers with a Mobile Application Testing course content guide to make their learning experience
+                    as simple as possible. The details of the Mobile Application Testing course content guide can be
+                    found in the sections below.
+
+                </p>
+
+            </section>
+
+            <section id="SP2-objective">
+                <h2> objectives </h2>
+                <p class="p-indent">Mobile Application Testing is the process of checking application software for
+                    functionality, usability, and consistency on handheld mobile devices. Mobile Application Testing can
+                    either be automated or manual. This lesson will serve as a second level learning guide about mobile
+                    testing. It covers subject(s) that anyone with prior understanding or completed Mobile Application
+                    Testing Specialist 1 may use to further enhance and improve their knowledge and skills about Mobile
+                    Application Testing.</p>
+                <p>
+                    This document aims to provide our Quality Assurance Engineers with the necessary guide in order to
+                    qualify as Mobile Application Testing Specialist 2.
+                </p>
+            </section>
+
+            <section id="SP2-course-levels">
+                <h2> course levels</h2>
+                <p class="p-indent">QA Division identified three (3) Levels of Mobile Application Testing training to
+                    become You-Source Mobile Application Training Testi-fied: Mobile Application Testing Specialist 1,
+                    2, and 3.</p>
+            </section>
+
+            <section id="SP2-intended-audience">
+                <h2>MOBILE APPLICATION TESTING SPECIALIST 2 </h2>
+                <h3>Intended Audience</h3>
+                <ul class="ul--L1">
+                    <li>Any level of Quality Engineer who is or will be working on a mobile project.</li>
+                    <li>Quality Engineers who are working on mobile projects and wish to learn more about them.</li>
+                    <li>Quality Engineers who want to learn about mobile testing in general.</li>
+
+                </ul>
+            </section>
+
+            <section id="SP2-pre-requisite">
+                <h2> Pre-requisite</h2>
+                <ul class="ul--L1">
+                    <li>Participants who would like to be included in this Mobile Application Testing course must
+                        complete the Mobile Application Testing Specialist 1 Training Course.</li>
+                </ul>
+            </section>
+
+            <section id="SP2-learning-objectives">
+                <h2>MOBILE APPLICATION TESTING SPECIALIST 2:<br> Learning Objectives</h2>
+                <ul class="ul-count-letter" style="margin-left:30px">
+                    <li>Is expert about Specialist 1 Level</li>
+                    <li>Knows how to do Mobile Application Automation Testing.</li>
+                </ul>
+            </section>
+
+            <section id="SP2-course-content" class="section-table">
+
+                <table>
+                    <caption>
+                        <h2>MOBILE APPLICATION TESTING SPECIALIST 2: <br> Course Content</h2>
+                    </caption>
+                    <tr>
+                        <th></th>
+                        <th>Topic Description</th>
+                        <th>Duration <br> <span class="note-green">[Estimate]</span></th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing - Review</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing Manual and Automated</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manual or Automated – which one is better?</td>
+                        <td>0.1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Performance</li>
+                                <li>Security</li>
+                                <li>Automated</li>
+                                <li>Storage or Load or Memory Testing</li>
+                                <li>Recovery</li>
+                                <li>Change-Related</li>
+                                <li>Beta</li>
+                                <li>Certification Others</li>
+                                <li>Battery Usage Testing</li>
+                                <li>Hardware Specific</li>
+                                <li>Standby</li>
+                            </ul>
+                        </td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Main Challenges of Mobile Application Testing
+                            <ul class="ull">
+                                <li>Browser Fragmentation</li>
+                                <li>Third Party Integrations</li>
+                                <li>App Security</li>
+                                <li>Battery Life</li>
+                                <li>Performance Testing</li>
+                                <li>Storage Issues</li>
+                                <li>Location Dependence</li>
+                            </ul>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Approaches to Mobile Application Testing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>The Problem with Legacy App Testing</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Why use mobile specific tools?</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing Frameworks</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Android Testing Framework</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>iOS Testing Framework</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Testing API Backend</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tools that support API testing</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Site Testing Strategy Key Points</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tips to test Mobile Apps</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Practical Application: Mobile Application Testing Types and Technique Activity [TBD]</td>
+                        <td>1</td>
+                    </tr>
+
+
+                </table>
+            </section>
+
+
+            <section id="SP2-RRML" class="section-table">
+                <table>
+                    <caption>MOBILE APPLICATION TESTING SPECIALIST 2:<br>
+                        Course Content Related Reading Materials Links
+                    </caption>
+                    <tr>
+                        <th></th>
+                        <th>Topic Description</th>
+                        <th>Links</th>
+                        <th>Duration</th>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>What is Mobile Application Testing?
+                            For review purposes
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manual Or Automated Mobile Testing. Which Is Better?</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Types And Techniques Of Testing Mobile Applications
+                            <ul class="ull">
+                                <li>Performance Testing</li>
+                                <li>Security Testing</li>
+                                <li>Automated Testing</li>
+                                <li>Storage Testing</li>
+                                <li>Input Testing Others</li>
+                                <li>Battery Usage Testing</li>
+                                <li>Installations & Update Testing</li>
+                                <li>Hardware Specific Testing</li>
+                                <li>Standby Testing</li>
+                                <li>Beta Testing</li>
+                                <li>Local Storage Testing</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Main Challenges Of Mobile Application Testing
+                            <ul class="ull">
+                                <li>Browser Fragmentation</li>
+                                <li>Third-party Integrations</li>
+                                <li>App Security</li>
+                                <li>Battery Life</li>
+                                <li>Performance Testing</li>
+                                <li>Storage Issues</li>
+                                <li>Location-Dependence</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile application testing stages
+                            <ul class="ull">
+                                <li>Performance testing</li>
+                                <li>Security testing</li>
+                                <li>Recovery testing</li>
+                                <li>Localization testing</li>
+                                <li>Change related testing</li>
+                                <li>Beta testing</li>
+                                <li>Certification testing</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://geteasyqa.com/qa/mobile-apps-testing/'
+                                target='_blank'>https://geteasyqa.com/qa/mobile-apps-testing/</a></td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Device Testing - Types</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_device_testing_types.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_device_testing_types.htm</a>
+                        </td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Approaches For Mobile Application Testing</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>The Problems With Legacy Mobile App Testing</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Why Use Mobile-Specific Tools</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing – Framework Overview</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_testing_frameworks_overview.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_testing_frameworks_overview.htm</a>
+                        </td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Test Automation Frameworks For Different Apps</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Common Mobile Test Frameworks</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing Platforms</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_testing_platforms.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_testing_platforms.htm</a>
+                        </td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Native & Hybrid Mobile App Test Automation</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing – Android Frameworks</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_testing_android_frameworks.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_testing_android_frameworks.htm</a>
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Android Automated Testing</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile Testing – iOS Frameworks</td>
+                        <td><a href='https://www.tutorialspoint.com/mobile_testing/mobile_testing_ios_frameworks.htm'
+                                target='_blank'>https://www.tutorialspoint.com/mobile_testing/mobile_testing_ios_frameworks.htm</a>
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>iOS Automated Testing</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Testing The API Backend Of Your Mobile Solution</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tools That Support API Testing</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tips For Effective Mobile Testing</td>
+                        <td><a href='https://testsigma.com/mobile-testing'
+                                target='_blank'>https://testsigma.com/mobile-testing</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile application specifics</td>
+                        <td><a href='https://geteasyqa.com/qa/mobile-apps-testing/'
+                                target='_blank'>https://geteasyqa.com/qa/mobile-apps-testing/</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Tips to test mobile application</td>
+                        <td><a href='https://geteasyqa.com/qa/mobile-apps-testing/'
+                                target='_blank'>https://geteasyqa.com/qa/mobile-apps-testing/</a></td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Best Cloud-Based Mobile App Testing Service Providers In 2022</td>
+                        <td><a href='https://www.softwaretestinghelp.com/cloud-mobile-testing-services/'
+                                target='_blank'>https://www.softwaretestinghelp.com/cloud-mobile-testing-services/</a>
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Top 10 Mobile Testing Service Provider Companies</td>
+                        <td><a href='https://www.softwaretestinghelp.com/mobile-testing-services/'
+                                target='_blank'>https://www.softwaretestinghelp.com/mobile-testing-services/</a></td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mobile App Beta Testing Services (IOS And Android Beta Testing Tools)</td>
+                        <td><a href='https://www.softwaretestinghelp.com/mobile-app-beta-testing-services/'
+                                target='_blank'>https://www.softwaretestinghelp.com/mobile-app-beta-testing-services/</a>
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>OTHER HELPFUL READING MATERIALS</td>
+                        <td><a href='OTHER HELPFUL READING MATERIALS' target='_blank'>OTHER HELPFUL READING
+                                MATERIALS</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>What is Mobile Application Testing?</td>
+                        <td><a href='https://applitools.com/blog/what-is-mobile-testing/'
+                                target='_blank'>https://applitools.com/blog/what-is-mobile-testing/</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Fundamentals of Mobile Testing</td>
+                        <td><a href='https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing'
+                                target='_blank'>https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How to Test a Mobile Application [Step by Step]</td>
+                        <td><a href='https://www.testbytes.net/blog/how-to-test-a-mobile-application/'
+                                target='_blank'>https://www.testbytes.net/blog/how-to-test-a-mobile-application/</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How To Test Mobile Applications Manually</td>
+                        <td><a href='https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/'
+                                target='_blank'>https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How to Test Mobile Applications Manually</td>
+                        <td><a href='https://www.browserstack.com/guide/how-to-test-mobile-applications-manually'
+                                target='_blank'>https://www.browserstack.com/guide/how-to-test-mobile-applications-manually</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>5 Points to Consider When Testing Mobile Apps</td>
+                        <td><a href='https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps'
+                                target='_blank'>https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>The Ultimate Mobile Testing Guide: 11 Tips to Test Your App Effectively</td>
+                        <td><a href='https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/'
+                                target='_blank'>https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>How to Perform Manual Mobile Testing Effectively?</td>
+                        <td><a href='https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/'
+                                target='_blank'>https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>All You Need To Know About Mobile App Testing</td>
+                        <td><a href='https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/'
+                                target='_blank'>https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>A Complete Guide to Successfully Win a Mobile Testing Job </td>
+                        <td><a href='https://katalon.com/resources-center/blog/mobile-testing-job'
+                                target='_blank'>https://katalon.com/resources-center/blog/mobile-testing-job</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Why Your Mobile App Needs Testing </td>
+                        <td><a href='https://skelia.com/articles/mobile-app-needs-testing/'
+                                target='_blank'>https://skelia.com/articles/mobile-app-needs-testing/</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </section>
+
+            <section class="section-table" id="SP2-CCRVL">
+                <table>
+                    <caption>MOBILE APPLICATION TESTING SPECIALIST 2:<br>
+                        Course Content Related Video Links
+                    </caption>
+                    <tr>
+                        <th>Topic Description</th>
+                        <th>YouTube Related Video Title</th>
+                        <th>YouTube Related Video Link</th>
+                        <th>Video Duration</th>
+                    </tr>
+
+                    <tr>
+                        <td>What is Mobile Application Testing?</td>
+                        <td>Mobile App Testing for beginners Day 01. Mobile App Testing Tutorial for beginners android
+                        </td>
+                        <td><a href='https://www.youtube.com/watch?v=mTIdoDEuXrM'
+                                target='_blank'>https://www.youtube.com/watch?v=mTIdoDEuXrM</a></td>
+                        <td>29:11</td>
+                    </tr>
+                    <tr>
+                        <td>Types of Mobile Apps
+                            <ul class="ull">
+                                <li>Native Apps</li>
+                                <li>Web Apps</li>
+                                <li>Hybrid Apps</li>
+                            </ul>
+
+                        </td>
+                        <td>Types Of Mobile APPS | Different Types of Mobile Applications - Native, Hybrid and Web |
+                            Mobile APPS</td>
+                        <td><a href='https://www.youtube.com/watch?v=g9LENGzRbnQ'
+                                target='_blank'>https://www.youtube.com/watch?v=g9LENGzRbnQ</a></td>
+                        <td>5:30</td>
+                    </tr>
+                    <tr>
+                        <td>Types And Techniques Of Testing Mobile Applications</td>
+                        <td>Mobile App QA – Types of Mobile App Testing
+                            <ul class="ull">
+                                <li>Performance Testing</li>
+                                <li>API Testing</li>
+                                <li>Usability Testing</li>
+                                <li>Compatibility Testing</li>
+                                <li>Localization Testing</li>
+                            </ul>
+                        </td>
+                        <td><a href='https://www.youtube.com/watch?v=u27gIg8Czhg'
+                                target='_blank'>https://www.youtube.com/watch?v=u27gIg8Czhg</a></td>
+                        <td>55:00</td>
+                    </tr>
+                    <tr>
+                        <td>Main Challenges Of Mobile Application Testing
+                            <ul class="ull">
+                                <li>Browser Fragmentation</li>
+                                <li>Third-party Integrations</li>
+                                <li>App Security</li>
+                                <li>Battery Life</li>
+                                <li>Performance Testing</li>
+                                <li>Storage Issues</li>
+                                <li>Location-Dependence</li>
+                            </ul>
+                        </td>
+                        <td>Mobile Applications Testing – Challenges, Approach & Strategy</td>
+                        <td><a href='https://www.youtube.com/watch?v=dtRk-yvr90U'
+                                target='_blank'>https://www.youtube.com/watch?v=dtRk-yvr90U</a></td>
+                        <td>7:29</td>
+                    </tr>
+                    <tr>
+                        <td>Approaches For Mobile Application Testing</td>
+                        <td>[Webinar] Mobile app testing strategy: How to get it right?</td>
+                        <td><a href='https://www.youtube.com/watch?v=eWjOza77Pjk'
+                                target='_blank'>https://www.youtube.com/watch?v=eWjOza77Pjk</a></td>
+                        <td>1:02:44</td>
+                    </tr>
+                    <tr>
+                        <td>The Problems With Legacy Mobile App Testing</td>
+                        <td>WHY MODERNIZE LEGACY APPLICATIONS? | LEGACY APP MODERNIZATION STRATEGIES</td>
+                        <td><a href='https://www.youtube.com/watch?v=T8LmFbCMBI4'
+                                target='_blank'>https://www.youtube.com/watch?v=T8LmFbCMBI4</a></td>
+                        <td>5:46</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Performance</li>
+                            </ul>
+                        </td>
+                        <td>Webinar: Implementing End to End Mobile Performance Testing</td>
+                        <td><a href='https://www.youtube.com/watch?v=_Uiwd6mJlP0'
+                                target='_blank'>https://www.youtube.com/watch?v=_Uiwd6mJlP0</a></td>
+                        <td>1:00:07</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Security</li>
+                            </ul>
+                        </td>
+                        <td>An introduction to Android application security testing (by Nikolay Elenkov)</td>
+                        <td><a href='https://www.youtube.com/watch?v=hRuNHUwiQJA'
+                                target='_blank'>https://www.youtube.com/watch?v=hRuNHUwiQJA</a></td>
+                        <td>1:12:53</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Regression</li>
+                            </ul>
+                        </td>
+                        <td>7 Steps to Master Mobile App Regression Testing | Bits&Bytes</td>
+                        <td><a href='https://www.youtube.com/watch?v=KVqb3unjwuc'
+                                target='_blank'>https://www.youtube.com/watch?v=KVqb3unjwuc</a></td>
+                        <td>1:59</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Beta Testing</li>
+                            </ul>
+                        </td>
+                        <td>Sauce Labs Mobile App Beta Testing (Demo)</td>
+                        <td><a href='https://www.youtube.com/watch?v=t55tanqHwC0'
+                                target='_blank'>https://www.youtube.com/watch?v=t55tanqHwC0</a></td>
+                        <td>3:14</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Using JMeter</li>
+                            </ul>
+                        </td>
+                        <td>JMeter - How to test Mobile Applications (in 7 Steps)</td>
+                        <td><a href='https://www.youtube.com/watch?v=JFDcgKQ8VFw'
+                                target='_blank'>https://www.youtube.com/watch?v=JFDcgKQ8VFw</a></td>
+                        <td>8:00</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Automated</li>
+                            </ul>
+                        </td>
+                        <td>Mobile Application Testing Using Appium for Beginners | Mobile App Testing Tutorial |
+                            Edureka</td>
+                        <td><a href='https://www.youtube.com/watch?v=p17bmM-nwkc'
+                                target='_blank'>https://www.youtube.com/watch?v=p17bmM-nwkc</a></td>
+                        <td>21:11</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Storage or Load or Memory Testing</li>
+                            </ul>
+                        </td>
+                        <td>Load Testing Mobile Applications with NeoLoad</td>
+                        <td><a href='https://www.youtube.com/watch?v=WNP5EMLaz4I'
+                                target='_blank'>https://www.youtube.com/watch?v=WNP5EMLaz4I</a></td>
+                        <td>6:17</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Recovery</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Certification</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Battery Usage</li>
+                            </ul>
+                        </td>
+                        <td>Also part of Performance Testing</td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Hardware Specific</li>
+                            </ul>
+                        </td>
+                        <td></td>
+                        <td><a href='' target='_blank'></a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Device Testing Types and Techniques
+                            <ul class="ull">
+                                <li>Standby</li>
+                            </ul>
+                        </td>
+                        <td>Testing App Standby (Android Development Patterns S2 Ep 4)</td>
+                        <td><a href='https://www.youtube.com/watch?v=RUP_xodP0wA'
+                                target='_blank'>https://www.youtube.com/watch?v=RUP_xodP0wA</a></td>
+                        <td>2:49</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Test Automation Frameworks For Different Apps</td>
+                        <td>Top 10 Mobile Application Testing Tools in 2021 | Best Mobile Testing Tools | Edureka</td>
+                        <td><a href='https://www.youtube.com/watch?v=aCBQm5yLc9w'
+                                target='_blank'>https://www.youtube.com/watch?v=aCBQm5yLc9w</a></td>
+                        <td>12:41</td>
+                    </tr>
+                    <tr>
+                        <td>Android Automated Testing</td>
+                        <td>Testing Android Applications With Appium | Appium Tutorial For Mobile Testing | Edureka</td>
+                        <td><a href='https://www.youtube.com/watch?v=i1tQ1pjEFWw'
+                                target='_blank'>https://www.youtube.com/watch?v=i1tQ1pjEFWw</a></td>
+                        <td>44:44:00</td>
+                    </tr>
+                    <tr>
+                        <td>iOS Automated Testing</td>
+                        <td>iOS and Android automation with TestProject</td>
+                        <td><a href='https://www.youtube.com/watch?v=X0v9zDOp1Vo'
+                                target='_blank'>https://www.youtube.com/watch?v=X0v9zDOp1Vo</a></td>
+                        <td>1:12</td>
+                    </tr>
+                    <tr>
+                        <td>Testing The API Backend Of Your Mobile Solution</td>
+                        <td>API backend testing with mobile (iOS / Android)</td>
+                        <td><a href='https://www.youtube.com/watch?v=dDhlrmuI_H0'
+                                target='_blank'>https://www.youtube.com/watch?v=dDhlrmuI_H0</a></td>
+                        <td>6:16</td>
+                    </tr>
+                    <tr>
+                        <td>Tools That Support API Testing</td>
+                        <td>How To Test Web Api Locally with Mobile Phone ?</td>
+                        <td><a href='https://www.youtube.com/watch?v=9ixt9bdAHs8'
+                                target='_blank'>https://www.youtube.com/watch?v=9ixt9bdAHs8</a></td>
+                        <td>4:42</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Testing – Framework Overview</td>
+                        <td>Mobile Test Automation 101: Everything You Need to Know About Appium</td>
+                        <td><a href='https://www.youtube.com/watch?v=aZS7HrNfyIk'
+                                target='_blank'>https://www.youtube.com/watch?v=aZS7HrNfyIk</a></td>
+                        <td>44:01:00</td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Testing – Android & iOS Frameworks</td>
+                        <td>Introduction to Appium in depth - android & iOS testing framework</td>
+                        <td><a href='https://www.youtube.com/watch?v=CzTLTo8W828'
+                                target='_blank'>https://www.youtube.com/watch?v=CzTLTo8W828</a></td>
+                        <td>17:07</td>
+                    </tr>
+
+                </table>
+            </section>
+
+        </section>
+
+        <section id="SP2-summary">
+            <h2> summary </h2>
+            <p class="p-indent">When Mobile Applications are developed, one of the main goals should always be to
+                provide the client and customer with the best possible experience. And in pursuit of perfection, it is
+                important to ensure that the software is one that meets the requirements and functions consistently.
+            </p>
+            <p class="p-indent">What then is the secret in making sure that a Mobile Application is error free? Aside
+                from a good workflow between developers and testers, another important component is making sure that our
+                Quality Assurance Engineers are qualified and equipped with the necessary skills, in alignment with
+                You_Source’s aim to always deliver a SUPERB software, </p>
+        </section>
+
+        <section id="SP2-references">
+            <h2>
+                REFERENCES </h2>
+            <ul class="ull">
+                <li><a href='https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/'
+                        target='_blank'> ALL YOU NEED TO KNOW ABOUT MOBILE APP TESTING</a></li>
+                <li><a href='https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/'
+                        target='_blank'> The Ultimate Mobile Testing Guide: 11 Tips to Test Your App Effectively</a>
+                </li>
+                <li><a href='https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps'
+                        target='_blank'> 5 POINTS TO CONSIDER WHEN TESTING MOBILE APPS</a></li>
+                <li><a href='https://www.softwaretestinghelp.com/beginners-guide-to-mobile-application-testing/'
+                        target='_blank'> Mobile App Testing Tutorials (A Complete Guide With 30+ Tutorials)</a></li>
+                <li><a href='https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/'
+                        target='_blank'> How to Perform Manual Mobile Testing Effectively?</a></li>
+                <li><a href='https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing'
+                        target='_blank'> FUNDAMENTALS OF MOBILE TESTING</a></li>
+                <li><a href='https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/'
+                        target='_blank'> How To Test Mobile Applications Manually</a></li>
+                <li><a href='https://applitools.com/blog/what-is-mobile-testing/' target='_blank'> "What is Mobile
+                        Testing? Getting Started "</a></li>
+                <li><a href='https://www.udemy.com/course/mobiletesting/' target='_blank'> Mobile Application Manual
+                        Testing - Android Application</a></li>
+                <li><a href='https://www.youtube.com/watch?v=wZxwq9lXF2E' target='_blank'> Learn mobile application
+                        testing from Scratch | Mobile application testing for beginners</a></li>
+                <li><a href='https://www.browserstack.com/guide/how-to-test-mobile-applications-manually'
+                        target='_blank'> How to Test Mobile Applications Manually</a></li>
+                <li><a href='https://www.perfecto.io/blog/mobile-testing' target='_blank'> What Is Mobile Device
+                        Testing? Strategies for Testing on Devices</a></li>
+                <li><a href='https://geteasyqa.com/qa/mobile-apps-testing/' target='_blank'> How to test mobile
+                        application</a></li>
+                <li><a href='https://testsigma.com/mobile-testing' target='_blank'> Everything you need to know about
+                        Mobile Testing | An essential guide to Mobile Testing</a></li>
+                <li><a href='https://www.guru99.com/testing-mobile-apps.html' target='_blank'> Mobile Apps Testing:
+                        Sample Test Cases & Test Scenarios</a></li>
+                <li><a href='https://www.tutorialspoint.com/mobile_testing/index.htm' target='_blank'> Mobile Testing
+                        Tutorial</a></li>
+                <li><a href='https://www.testbytes.net/blog/how-to-test-a-mobile-application/' target='_blank'> How to
+                        Test a Mobile Application [Step by Step] </a></li>
+                <li><a href='https://katalon.com/resources-center/blog/mobile-testing-job' target='_blank'> A Complete
+                        Guide to Successfully Win a Mobile Testing Job</a></li>
+                <li><a href='https://skelia.com/articles/mobile-app-needs-testing/' target='_blank'> Why Your Mobile App
+                        Needs Testing </a></li>
+                <li><a href='https://www.clariontech.com/blog/importance-of-mobile-app-testing'
+                        target='_blank'> Importance of Mobile App Testing </a></li>
+            </ul>
+
+        </section>
+
+        <section>
+            <header class="header--title">
+                <h1> Mobile Application Testing <br>
+                    Training Plan <br>
+                    Specialist 3
+                </h1>
+            </header>
+        </section>
+
+        <section id="SP3-introduction">
+            <h2>
+                INTRODUCTION
+            </h2>
+            <p class="p-indent">
+                Mobile Application Testing involves evaluating the software against its technical and business
+                requirements, in order to determine its effectiveness. Mobile Application Testing likewise involves
+                implementing techniques in order to uncover software defects
+
+            </p>
+            <p class="p-indent">
+                With these being said, You_Source is committed to provide our Quality Assurance Engineers with a Mobile
+                Application Testing course content guide to make their learning experience as simple as possible. The
+                details of the Mobile Application Testing course content guide can be found in the sections below.
+            </p>
+        </section>
+
+        <section id="SP3-objective">
+            <h2>Objectives</h2>
+            <p class="p-indent">Mobile Application Testing is the process of checking application software for
+                functionality, usability, and consistency on handheld mobile devices. Mobile application testing can be
+                either automated or manual. This lesson will serve as an introduction to mobile testing as well as a
+                guidance. It covers subjects that anyone with no prior understanding of testing may use to begin
+                studying mobile application testing from the ground up.</p>
+            <p class="p-indent">This document aims to provide our Quality Assurance Engineers with the necessary guide
+                in order to qualify as<strong> Mobile Application Testing Specialist 3</strong>. </p>
+
+        </section>
+
+        <section id="SP3-course-levels">
+            <p class="p-indent">QA Division identified three (3) Levels of Mobile Application Testing training to become
+                You-Source Mobile Application Training Testi-fied: Mobile Application Testing Specialist 1, 2, and 3.
+            </p>
+        </section>
+
+        <section id="SP3-intended-audience">
+            <h2>MOBILE APPLICATION TESTING SPECIALIST 3 </h2>
+            <h3>Intended Audience</h3>
+            <ul class="ull">
+                <li>Any level of Quality Engineer who is or will be working on a mobile project.</li>
+                <li>Quality Engineers who are working on mobile projects and wish to learn more about them.</li>
+                <li>Quality Engineers who want to learn about mobile testing in general.</li>
+
+            </ul>
+
+        </section>
+
+        <section id="SP3-pre-requisite">
+            <h2> Requirements </h2>
+            <p>Participants who would like to be included in this Mobile Application Testing course must complete both
+                the <strong>Mobile Application Testing Specialist 1 & Specialist 2 Training Courses.</strong></p>
+        </section>
+
+        <section id="SP3-learning-objectives">
+            <h2> MOBILE APPLICATION TESTING SPECIALIST 3:<br> Learning Objectives </h2>
+            <ul class="ul-count-letter ull">
+                <li>Needs to be Specialist on any one of the Mobile Application Testing tool and framework available /
+                    Acquired specific Certification about any (but not limited) to any of the available Mobile
+                    Application Tools.</li>
+                <li>Focus of his/her learning is regarding either Android and/or iOS Mobile Framework.</li>
+            </ul>
+        </section>
+
+        <section id="SP3-course-content">
+            <h2>MOBILE APPLICATION TESTING SPECIALIST 3: <br> Course Content</h2>
+            <ul class="ull ul-count">
+                <li>Quality Engineer needs to be Specialist on any one of the Mobile Application Testing tool and
+                    framework available.</li>
+                <li>Focus of his/her learning is regarding either for Android and/or iOS Mobile Framework.</li>
+                <li>Can acquire specific Certification about any (but not limited) to the following Mobile Application
+                    Tools:
+
+                    <ul class="ull">
+                        <li>Appium: Appium is the most common mobile test automation framework for both Android and iOS
+                            native, web and hybrid apps. It allows you to write Appium scripts in almost any programming
+                            language</li>
+                        <li>Testsigma: Testsigma is a unified test automation platform that allows you to automate for
+                            desktop, mobile and API - all from the same place.</li>
+                        <li>Espresso: It is the Android test automation framework that got open-sourced by Google and it
+                            allows you to write concise Android UI tests with it</li>
+                        <li>Detox: Detox is a javascript based mobile testing framework which makes the test execution
+                            very fast and robust</li>
+                        <li>Calabash: It is a cross-platform test automation framework for both Android and iOS native
+                            and hybrid applications. It can be easily used by non-technical people due to
+                            easy-to-understand syntax</li>
+                        <li>UI Automator: UI Automator helps you perform more UI testing against Android apps and games.
+                            The downside of the framework is that it does not support Webview to directly access Android
+                            objects.</li>
+                        <li>XCTest/XCUITest: It is an iOS testing framework developed by Apple in 2015 for its native UI
+                            suite. It is developed on top of the XCTest framework which is the main test framework that
+                            is integrated within Apple’s Xcode. </li>
+                        <li>Katalon: It is an automation testing software tool developed by Katalon, Inc. The software
+                            is built on top of the open-source automation frameworks Selenium, Appium with a specialized
+                            IDE interface for web, API, mobile and desktop application testing</li>
+                        <li>Etc.</li>
+
+                    </ul>
+
+
+
+                </li>
+
+            </ul>
+        </section>
+
+        <section id="SP3-CCRRML">
+            <h2>MOBILE APPLICATION TESTING SPECIALIST 3: <br>
+                Course Content Related Reading Materials Links <span class="note-red">??</span>
+                </h2>
+        </section>
+
+        <section id="SP3-CCRVL">
+            <h2>MOBILE APPLICATION TESTING SPECIALIST 3: <br>
+                Course Content Related Video Links  <span class="note-red">??</span>
+                </h2>
+        </section>
+
+        <section id="SP3-summary">
+            <h2> SUmmary</h2>
+            <p class="p-indent">When Mobile Applications are developed, one of the main goals should always be to provide the client and customer with the best possible experience. And in pursuit of perfection, it is important to ensure that the software is one that meets the requirements and functions consistently. </p>
+            <p class="p-indent">What then is the secret in making sure that a Mobile Application is error free? Aside from a good workflow between developers and testers, another important component is making sure that our Quality Assurance Engineers are qualified and equipped with the necessary skills, in alignment with You_Source’s aim to always deliver a SUPERB software, </p>
+        </section>
+
+        <section id="SP3-references">
+            <h2> references</h2>
+            <ul class="ull">
+                <li><a href='https://nix-united.com/blog/all-you-need-to-know-about-mobile-app-testing/' target='_blank'> ALL YOU NEED TO KNOW ABOUT MOBILE APP TESTING</a></li>
+<li><a href='https://testguild.com/the-ultimate-mobile-testing-guide-11-tips-to-test-your-app-effectively/' target='_blank'> The Ultimate Mobile Testing Guide: 11 Tips to Test Your App Effectively</a></li>
+<li><a href='https://www2.stardust-testing.com/en/5-points-consider-when-testing-mobile-apps' target='_blank'> 5 POINTS TO CONSIDER WHEN TESTING MOBILE APPS</a></li>
+<li><a href='https://www.softwaretestinghelp.com/beginners-guide-to-mobile-application-testing/' target='_blank'> Mobile App Testing Tutorials (A Complete Guide With 30+ Tutorials)</a></li>
+<li><a href='https://smartbear.com/blog/how-to-perform-manual-mobile-testing-effectively/' target='_blank'> How to Perform Manual Mobile Testing Effectively?</a></li>
+<li><a href='https://www2.stardust-testing.com/en/blog-en/fundamentals-mobile-testing' target='_blank'> FUNDAMENTALS OF MOBILE TESTING</a></li>
+<li><a href='https://www.lambdatest.com/blog/how-to-test-mobile-application-manually/' target='_blank'> How To Test Mobile Applications Manually</a></li>
+<li><a href='https://applitools.com/blog/what-is-mobile-testing/' target='_blank'> "What is Mobile Testing? Getting Started "</a></li>
+<li><a href='https://www.udemy.com/course/mobiletesting/' target='_blank'> Mobile Application Manual Testing - Android Application</a></li>
+<li><a href='https://www.youtube.com/watch?v=wZxwq9lXF2E' target='_blank'> Learn mobile application testing from Scratch | Mobile application testing for beginners</a></li>
+<li><a href='https://www.browserstack.com/guide/how-to-test-mobile-applications-manually' target='_blank'> How to Test Mobile Applications Manually</a></li>
+<li><a href='https://www.perfecto.io/blog/mobile-testing' target='_blank'> What Is Mobile Device Testing? Strategies for Testing on Devices</a></li>
+<li><a href='https://geteasyqa.com/qa/mobile-apps-testing/' target='_blank'> How to test mobile application</a></li>
+<li><a href='https://testsigma.com/mobile-testing' target='_blank'> Everything you need to know about Mobile Testing | An essential guide to Mobile Testing</a></li>
+<li><a href='https://www.guru99.com/testing-mobile-apps.html' target='_blank'> Mobile Apps Testing: Sample Test Cases & Test Scenarios</a></li>
+<li><a href='https://www.tutorialspoint.com/mobile_testing/index.htm' target='_blank'> Mobile Testing Tutorial</a></li>
+<li><a href='https://www.testbytes.net/blog/how-to-test-a-mobile-application/' target='_blank'> How to Test a Mobile Application [Step by Step] </a></li>
+<li><a href='https://katalon.com/resources-center/blog/mobile-testing-job' target='_blank'> A Complete Guide to Successfully Win a Mobile Testing Job</a></li>
+<li><a href='https://skelia.com/articles/mobile-app-needs-testing/' target='_blank'> Why Your Mobile App Needs Testing </a></li>
+<li><a href='https://www.clariontech.com/blog/importance-of-mobile-app-testing' target='_blank'> Importance of Mobile App Testing </a></li>
+
+            </ul>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+
+</html>
